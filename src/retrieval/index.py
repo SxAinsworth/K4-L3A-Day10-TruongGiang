@@ -26,19 +26,33 @@ class LocalEmbeddingIndex:
         self,
         settings: Settings,
         collection_name: str,
-        documents: list[dict[str, Any]],
-        persist_path: Path,
+        documents: list[dict[str, Any]] | None = None,
+        persist_path: Path | None = None,
     ):
         self.settings = settings
-        self.collection_name = collection_name
-        self.documents = documents
-        self.persist_path = persist_path
+        self.collection_name = collection_name or settings.baseline_collection_name
+        self.documents = documents or []
+        self.persist_path = persist_path or settings.paths.chroma_dir
         self.embedding_backend = "chroma"
         self.embedding_model = MiniLMEmbeddings(settings.embedding_model)
-        self.client = chromadb.PersistentClient(path=str(persist_path))
-        self.collection = self.client.get_collection(name=collection_name)
-        self.documents_by_paper_id = {document["paper_id"].lower(): document for document in documents}
-        self.documents_by_title = {document["title"].lower(): document for document in documents}
+        self.persist_path.mkdir(parents=True, exist_ok=True)
+        self.client = chromadb.PersistentClient(path=str(self.persist_path))
+        try:
+            self.collection = self.client.get_collection(name=self.collection_name)
+        except Exception:
+            self.collection = self.client.create_collection(
+                name=self.collection_name,
+                configuration={"hnsw": {"space": "cosine"}},
+            )
+        self._refresh_lookup_maps()
+
+    def _refresh_lookup_maps(self) -> None:
+        self.documents_by_paper_id = {
+            document["paper_id"].lower(): document for document in self.documents
+        }
+        self.documents_by_title = {
+            document["title"].lower(): document for document in self.documents
+        }
 
     @staticmethod
     def _build_documents(df: pd.DataFrame) -> list[dict[str, Any]]:
@@ -138,6 +152,26 @@ class LocalEmbeddingIndex:
             persist_path=Path(payload["persist_path"]),
         )
 
+    def build_from_clean(self) -> "LocalEmbeddingIndex":
+        """Build this collection from the configured cleaned JSON artifact."""
+        clean_path = self.settings.paths.clean_json
+        if not clean_path.exists():
+            raise FileNotFoundError(f"Clean dataset not found: {clean_path}")
+
+        df = pd.read_json(clean_path)
+        manifest_by_collection = {
+            self.settings.baseline_collection_name: self.settings.paths.embeddings_json,
+            self.settings.corrupted_collection_name: self.settings.paths.corrupted_embeddings_json,
+            self.settings.repaired_collection_name: self.settings.paths.repaired_embeddings_json,
+        }
+        built = self.build(
+            df,
+            self.settings,
+            embeddings_output_path=manifest_by_collection.get(self.collection_name),
+        )
+        self.__dict__.update(built.__dict__)
+        return self
+
     def search(self, query: str, top_k: int | None = None) -> list[SearchResult]:
         query_embedding = self.embedding_model.embed_query(query)
         results = self.collection.query(
@@ -164,6 +198,10 @@ class LocalEmbeddingIndex:
                 )
             )
         return scored
+
+    def semantic_search(self, query: str, top_k: int | None = None) -> list[SearchResult]:
+        """Compatibility alias for semantic vector search."""
+        return self.search(query, top_k=top_k)
 
     def lookup(self, value: str) -> dict[str, Any] | None:
         needle = value.strip().lower()

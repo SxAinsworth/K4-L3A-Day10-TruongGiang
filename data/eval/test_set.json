@@ -1,0 +1,104 @@
+[
+  {
+    "id": "eval_001",
+    "type": "summary",
+    "question_type": "summary",
+    "question": "What is the main research summary of the paper 'Agentic Retrieval-Augmented Generation for Knowledge-Intensive Tasks'?",
+    "ground_truth": "Retrieval-Augmented Generation (RAG) significantly improves large language model accuracy by grounding responses in retrieved passages.",
+    "ground_truth_doc_ids": [
+      "10.1145/3637528.3671801"
+    ]
+  },
+  {
+    "id": "eval_001",
+    "type": "authors",
+    "question_type": "authors",
+    "question": "Who authored the study 'Agentic Retrieval-Augmented Generation for Knowledge-Intensive Tasks'?",
+    "ground_truth": "Minh Nguyen, Hoang Le",
+    "ground_truth_doc_ids": [
+      "10.1145/3637528.3671801"
+    ]
+  },
+  {
+    "id": "eval_001",
+    "type": "date",
+    "question_type": "date",
+    "question": "When was the study 'Agentic Retrieval-Augmented Generation for Knowledge-Intensive Tasks' published?",
+    "ground_truth": "2026-05-20",
+    "ground_truth_doc_ids": [
+      "10.1145/3637528.3671801"
+    ]
+  },
+  {
+    "id": "eval_001",
+    "type": "category",
+    "question_type": "category",
+    "question": "What categories does the paper 'Agentic Retrieval-Augmented Generation for Knowledge-Intensive Tasks' belong to?",
+    "ground_truth": "Artificial Intelligence, Information Retrieval",
+    "ground_truth_doc_ids": [
+      "10.1145/3637528.3671801"
+    ]
+  },
+  {
+    "id": "eval_005",
+    "type": "summary",
+    "question_type": "summary",
+    "question": "What is the main research summary of the paper 'Data Observability and Quality Gates for Production RAG Systems'?",
+    "ground_truth": "Silent data corruption in RAG pipelines degrades LLM answer faithfulness without throwing runtime errors.",
+    "ground_truth_doc_ids": [
+      "10.1145/3637528.3671802"
+    ]
+  },
+  {
+    "id": "eval_005",
+    "type": "authors",
+    "question_type": "authors",
+    "question": "Who authored the study 'Data Observability and Quality Gates for Production RAG Systems'?",
+    "ground_truth": "Anh Tran, Quoc Pham",
+    "ground_truth_doc_ids": [
+      "10.1145/3637528.3671802"
+    ]
+  },
+  {
+    "id": "eval_005",
+    "type": "date",
+    "question_type": "date",
+    "question": "When was the study 'Data Observability and Quality Gates for Production RAG Systems' published?",
+    "ground_truth": "2026-06-12",
+    "ground_truth_doc_ids": [
+      "10.1145/3637528.3671802"
+    ]
+  },
+  {
+    "id": "eval_005",
+    "type": "category",
+    "question_type": "category",
+    "question": "What categories does the paper 'Data Observability and Quality Gates for Production RAG Systems' belong to?",
+    "ground_truth": "Software Engineering, Data Systems",
+    "ground_truth_doc_ids": [
+      "10.1145/3637528.3671802"
+    ]
+  },
+  {
+    "id": "eval_009",
+    "type": "multi_hop",
+    "question_type": "multi_hop",
+    "question": "How do the research areas of 'Agentic Retrieval-Augmented Generation for Knowledge-Intensive Tasks' and 'Data Observability and Quality Gates for Production RAG Systems' connect?",
+    "ground_truth": "'Agentic Retrieval-Augmented Generation for Knowledge-Intensive Tasks' belongs to Artificial Intelligence, Information Retrieval and studies Retrieval-Augmented Generation (RAG) significantly improves large language model accuracy by grounding responses in retrieved passages. 'Data Observability and Quality Gates for Production RAG Systems' belongs to Software Engineering, Data Systems and studies Silent data corruption in RAG pipelines degrades LLM answer faithfulness without throwing runtime errors.",
+    "ground_truth_doc_ids": [
+      "10.1145/3637528.3671801",
+      "10.1145/3637528.3671802"
+    ]
+  },
+  {
+    "id": "eval_010",
+    "type": "multi_hop",
+    "question_type": "multi_hop",
+    "question": "Compare the publication dates and categories of 'Agentic Retrieval-Augmented Generation for Knowledge-Intensive Tasks' and 'Data Observability and Quality Gates for Production RAG Systems'.",
+    "ground_truth": "'Agentic Retrieval-Augmented Generation for Knowledge-Intensive Tasks' was published on 2026-05-20 in Artificial Intelligence, Information Retrieval; 'Data Observability and Quality Gates for Production RAG Systems' was published on 2026-06-12 in Software Engineering, Data Systems.",
+    "ground_truth_doc_ids": [
+      "10.1145/3637528.3671801",
+      "10.1145/3637528.3671802"
+    ]
+  }
+]

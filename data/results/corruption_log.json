@@ -1,0 +1,90 @@
+{
+  "created_at": "2026-09-25T09:53:53.066393+00:00",
+  "input_rows": 24,
+  "output_rows": 24,
+  "scenarios": [
+    {
+      "scenario": "drop_latest_records",
+      "description": "Remove the most recently published records.",
+      "affected_rows": 5,
+      "paper_ids": [
+        "10.1145/3637528.3671812",
+        "10.1145/3637528.3671808",
+        "10.1145/3637528.3671804",
+        "10.1145/3637528.3671807",
+        "10.1145/3637528.3671824"
+      ]
+    },
+    {
+      "scenario": "blank_summary",
+      "description": "Clear summaries to simulate incomplete metadata.",
+      "affected_rows": 3,
+      "paper_ids": [
+        "10.1145/3637528.3671801",
+        "10.1145/3637528.3671802",
+        "10.1145/3637528.3671803"
+      ]
+    },
+    {
+      "scenario": "inject_text_noise",
+      "description": "Append meaningless tokens to text_for_embedding.",
+      "affected_rows": 3,
+      "paper_ids": [
+        "10.1145/3637528.3671821",
+        "10.1145/3637528.3671822",
+        "10.1145/3637528.3671823"
+      ]
+    },
+    {
+      "scenario": "truncate_title",
+      "description": "Truncate titles to fewer than ten characters.",
+      "affected_rows": 3,
+      "paper_ids": [
+        "10.1145/3637528.3671805",
+        "10.1145/3637528.3671806",
+        "10.1145/3637528.3671809"
+      ],
+      "original_titles": {
+        "10.1145/3637528.3671805": "Evaluating Retrieval Precision with Token F1 and LLM Judges",
+        "10.1145/3637528.3671806": "Semantic Layer Integration for Agentic Text-to-SQL Pipelines",
+        "10.1145/3637528.3671809": "Chunking Strategies for Technical Documentation Retrieval"
+      }
+    },
+    {
+      "scenario": "stale_date",
+      "description": "Move publication dates five years into the past.",
+      "affected_rows": 7,
+      "paper_ids": [
+        "10.1145/3637528.3671801",
+        "10.1145/3637528.3671802",
+        "10.1145/3637528.3671803",
+        "10.1145/3637528.3671805",
+        "10.1145/3637528.3671806",
+        "10.1145/3637528.3671809",
+        "10.1145/3637528.3671810"
+      ],
+      "original_dates": {
+        "10.1145/3637528.3671801": "2026-05-20",
+        "10.1145/3637528.3671802": "2026-06-12",
+        "10.1145/3637528.3671803": "2026-04-18",
+        "10.1145/3637528.3671805": "2026-03-28",
+        "10.1145/3637528.3671806": "2026-05-02",
+        "10.1145/3637528.3671809": "2026-04-30",
+        "10.1145/3637528.3671810": "2026-06-08"
+      },
+      "replacement_date": "2021-09-25"
+    },
+    {
+      "scenario": "duplicate_rows",
+      "description": "Append duplicate copies of corrupted records.",
+      "affected_rows": 5,
+      "paper_ids": [
+        "10.1145/3637528.3671801",
+        "10.1145/3637528.3671802",
+        "10.1145/3637528.3671803",
+        "10.1145/3637528.3671805",
+        "10.1145/3637528.3671806"
+      ]
+    }
+  ]
+}
