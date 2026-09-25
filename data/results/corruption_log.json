@@ -1,0 +1,104 @@
+{
+  "original_rows": 24,
+  "corrupted_rows": 22,
+  "scenario_count": 6,
+  "actions": [
+    {
+      "scenario": "drop_latest_records",
+      "description": "Removed the newest 20% of records.",
+      "affected_count": 5,
+      "paper_ids": [
+        "10.21203/rs.3.rs-10489777/v1",
+        "10.70267/aitia.2026482489",
+        "10.21203/rs.3.rs-10349437/v1",
+        "10.54254/2755-2721/2026.36624",
+        "10.36887/2415-8453-2026-3-2"
+      ]
+    },
+    {
+      "scenario": "blank_summary",
+      "description": "Replaced summaries with empty strings.",
+      "affected_count": 3,
+      "paper_ids": [
+        "10.28932/jutisi.v12i2.13099",
+        "10.20944/preprints202608.1849.v1",
+        "10.21203/rs.3.rs-10423755/v1"
+      ]
+    },
+    {
+      "scenario": "inject_text_noise",
+      "description": "Injected a deterministic garbage token sequence into text_for_embedding.",
+      "affected_count": 3,
+      "paper_ids": [
+        "10.3390/knowledge6030022",
+        "10.36948/ijfmr.2026.v08i04.85777",
+        "10.2118/234689-pa"
+      ],
+      "noise": "zxqv_@@@_CORRUPTED_VECTOR_NOISE_9f8e7d_###_zxqv"
+    },
+    {
+      "scenario": "truncate_title",
+      "description": "Truncated titles to at most 7 characters.",
+      "affected_count": 3,
+      "records": [
+        {
+          "paper_id": "10.1007/s10278-026-02086-9",
+          "original_title": "JADE-Plus: A Multimodal Agentic Retrieval-Augmented Generation Large Language Framework for Diagnostic Support in Jawbone Lesions: Development and Technical Validation Study"
+        },
+        {
+          "paper_id": "10.21203/rs.3.rs-10178277/v1",
+          "original_title": "Retrieval-Augmented Large-Language-Model-Based Time-Series Forecasting for Cross-Market Equity Analysis"
+        },
+        {
+          "paper_id": "10.2196/preprints.106157",
+          "original_title": "Does retrieval-augmented generation impact medical students\u2019 perceptions of large language models? (Preprint)"
+        }
+      ]
+    },
+    {
+      "scenario": "stale_date",
+      "description": "Moved publication dates five years into the past.",
+      "affected_count": 7,
+      "records": [
+        {
+          "paper_id": "10.28932/jutisi.v12i2.13099",
+          "original_published": "2026-08-27T00:00:00+00:00"
+        },
+        {
+          "paper_id": "10.20944/preprints202608.1849.v1",
+          "original_published": "2026-08-26T00:00:00+00:00"
+        },
+        {
+          "paper_id": "10.21203/rs.3.rs-10423755/v1",
+          "original_published": "2026-08-26T00:00:00+00:00"
+        },
+        {
+          "paper_id": "10.3390/knowledge6030022",
+          "original_published": "2026-08-25T00:00:00+00:00"
+        },
+        {
+          "paper_id": "10.36948/ijfmr.2026.v08i04.85777",
+          "original_published": "2026-08-14T00:00:00+00:00"
+        },
+        {
+          "paper_id": "10.2118/234689-pa",
+          "original_published": "2026-08-01T00:00:00+00:00"
+        },
+        {
+          "paper_id": "10.1007/s10278-026-02086-9",
+          "original_published": "2026-07-13T00:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "scenario": "duplicate_rows",
+      "description": "Appended exact row copies with duplicate paper_id values.",
+      "affected_count": 3,
+      "paper_ids": [
+        "10.28932/jutisi.v12i2.13099",
+        "10.20944/preprints202608.1849.v1",
+        "10.21203/rs.3.rs-10423755/v1"
+      ]
+    }
+  ]
+}

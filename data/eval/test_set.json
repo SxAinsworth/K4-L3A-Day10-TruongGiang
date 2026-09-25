@@ -1,0 +1,104 @@
+[
+  {
+    "id": "eval_001",
+    "type": "summary",
+    "question_type": "summary",
+    "question": "What is the main research contribution of \"DOLPHIN: A Privacy-Preserving Digital Investigation Readiness Assessment Framework based on Offline Large Language Models and Retrieval-Augmented Generation\"?",
+    "ground_truth": "Abstract Increasingly, digital forensic investigations require a quick, reliable, and privacy-preserving assessment of case materials before formal forensic examination.",
+    "ground_truth_doc_ids": [
+      "10.21203/rs.3.rs-10489777/v1"
+    ]
+  },
+  {
+    "id": "eval_002",
+    "type": "summary",
+    "question_type": "summary",
+    "question": "What is the main research contribution of \"Advances in Reinforcement Learning for Retrieval-Augmented Generation in Large Language Model\"?",
+    "ground_truth": "Retrieval-augmented generation (RAG) enhances large language models (LLMs) by incorporating external information, but traditional fixed retrieval processes struggle to adapt to complex task requirements.",
+    "ground_truth_doc_ids": [
+      "10.54254/2755-2721/2026.36624"
+    ]
+  },
+  {
+    "id": "eval_003",
+    "type": "authors",
+    "question_type": "authors",
+    "question": "Who authored the research \"Transformasi Layanan Informasi Berbasis Chatbot Retrieval-Augmented Generation dan Large Language Model\" about Crossref did not supply a specialist category.?",
+    "ground_truth": "Muhamad Komarudin, Chelly Sabrina, Yessy Mulyani, Puput Budi Wintoro",
+    "ground_truth_doc_ids": [
+      "10.28932/jutisi.v12i2.13099"
+    ]
+  },
+  {
+    "id": "eval_004",
+    "type": "authors",
+    "question_type": "authors",
+    "question": "Who authored the research \"Integrating Retrieval-Augmented Generation with Large Language Model for Robust and Explainable AI Text Detection\" about Crossref did not supply a specialist category.?",
+    "ground_truth": "Ibtasam Ur Rehman, Muhammad Islam, Muhammad Yousaf Rehman, Basharat Hussain",
+    "ground_truth_doc_ids": [
+      "10.3390/knowledge6030022"
+    ]
+  },
+  {
+    "id": "eval_005",
+    "type": "date",
+    "question_type": "date",
+    "question": "In which month and year was \"SafeRAG: A Large-Language-Model-Based Multistage Retrieval-Augmented Framework for Oil and Gas Safety Report Generation\" published?",
+    "ground_truth": "August 2026",
+    "ground_truth_doc_ids": [
+      "10.2118/234689-pa"
+    ]
+  },
+  {
+    "id": "eval_006",
+    "type": "date",
+    "question_type": "date",
+    "question": "In which month and year was \"Does retrieval-augmented generation impact medical students\u2019 perceptions of large language models? (Preprint)\" published?",
+    "ground_truth": "July 2026",
+    "ground_truth_doc_ids": [
+      "10.2196/preprints.106157"
+    ]
+  },
+  {
+    "id": "eval_007",
+    "type": "category",
+    "question_type": "category",
+    "question": "Which specialist fields does the paper \"Microsoft Azure artificial intelligence / machine learning hackathon for development of retrieval-augmented generation large language model\" belong to?",
+    "ground_truth": "Crossref did not supply a specialist category.",
+    "ground_truth_doc_ids": [
+      "10.21079/11681/50309"
+    ]
+  },
+  {
+    "id": "eval_008",
+    "type": "category",
+    "question_type": "category",
+    "question": "Which specialist fields does the paper \"\u0421\u043d\u0438\u0436\u0435\u043d\u0438\u0435 \u0440\u0438\u0441\u043a\u043e\u0432 \u043f\u0440\u0438\u043c\u0435\u043d\u0435\u043d\u0438\u044f LLM (Large Language Model) \u0432 \u0441\u0444\u0435\u0440\u0435 \u044d\u043a\u043e\u043d\u043e\u043c\u0438\u0447\u0435\u0441\u043a\u043e\u0439 \u0431\u0435\u0437\u043e\u043f\u0430\u0441\u043d\u043e\u0441\u0442\u0438 \u043f\u0440\u0435\u0434\u043f\u0440\u0438\u044f\u0442\u0438\u0439 \u043c\u043e\u043b\u043e\u0447\u043d\u043e\u0439 \u043f\u0440\u043e\u043c\u044b\u0448\u043b\u0435\u043d\u043d\u043e\u0441\u0442\u0438 \u043d\u0430 \u043e\u0441\u043d\u043e\u0432\u0435 \u043f\u043e\u0434\u0445\u043e\u0434\u0430 RAG (Retrieval-Augmented Generation)\" belong to?",
+    "ground_truth": "Crossref did not supply a specialist category.",
+    "ground_truth_doc_ids": [
+      "10.47576/2949-1894.2026.7.7.023"
+    ]
+  },
+  {
+    "id": "eval_009",
+    "type": "multi_hop",
+    "question_type": "multi_hop",
+    "question": "How do \"Speculative Retrieval-Augmented Generation for Cost-Efficient Large Language Model Inference\" and \"Advances in Reinforcement Learning for Retrieval-Augmented Generation in Large Language Model\" complement each other across their fields?",
+    "ground_truth": "Speculative Retrieval-Augmented Generation for Cost-Efficient Large Language Model Inference (Crossref did not supply a specialist category.): Abstract - This work focuses on the two crucial bottlenecks in Retrieval-Augmented Generation (RAG): high inference latency and expensive computation cost. Advances in Reinforcement Learning for Retrieval-Augmented Generation in Large Language Model (Crossref did not supply a specialist category.): Retrieval-augmented generation (RAG) enhances large language models (LLMs) by incorporating external information, but traditional fixed retrieval processes struggle to adapt to complex task requirements.",
+    "ground_truth_doc_ids": [
+      "10.55041/isjem07213",
+      "10.54254/2755-2721/2026.36624"
+    ]
+  },
+  {
+    "id": "eval_010",
+    "type": "multi_hop",
+    "question_type": "multi_hop",
+    "question": "How do \"A Foundation Model Architecture for Supply Chain Risk Prediction: Integrating Large Language Models and Retrieval-Augmented Generation for Automated Disruption Alerting\" and \"DOLPHIN: A Privacy-Preserving Digital Investigation Readiness Assessment Framework based on Offline Large Language Models and Retrieval-Augmented Generation\" complement each other across their fields?",
+    "ground_truth": "A Foundation Model Architecture for Supply Chain Risk Prediction: Integrating Large Language Models and Retrieval-Augmented Generation for Automated Disruption Alerting (Crossref did not supply a specialist category.): This study has examined whether a foundation model architecture, combining large language models with a supply chain knowledge graph and retrieval-augmented generation, can predict supply chain disruptions from unstructured evidence more effectively than the classical machine learning methods that dominate current practice, and it has developed and tested a framework for automated disruption alerting across supplier, logistics, regulatory, and hazard risk domains. DOLPHIN: A Privacy-Preserving Digital Investigation Readiness Assessment Framework based on Offline Large Language Models and Retrieval-Augmented Generation (Crossref did not supply a specialist category.): Abstract Increasingly, digital forensic investigations require a quick, reliable, and privacy-preserving assessment of case materials before formal forensic examination.",
+    "ground_truth_doc_ids": [
+      "10.63125/gseh0k17",
+      "10.21203/rs.3.rs-10489777/v1"
+    ]
+  }
+]

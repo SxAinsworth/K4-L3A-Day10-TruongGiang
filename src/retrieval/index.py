@@ -26,25 +26,54 @@ class LocalEmbeddingIndex:
         self,
         settings: Settings,
         collection_name: str,
-        documents: list[dict[str, Any]],
-        persist_path: Path,
+        documents: list[dict[str, Any]] | None = None,
+        persist_path: Path | None = None,
     ):
         self.settings = settings
         self.collection_name = collection_name
-        self.documents = documents
-        self.persist_path = persist_path
+        self.documents = documents or []
+        self.persist_path = persist_path or settings.paths.chroma_dir
         self.embedding_backend = "chroma"
         self.embedding_model = MiniLMEmbeddings(settings.embedding_model)
-        self.client = chromadb.PersistentClient(path=str(persist_path))
-        self.collection = self.client.get_collection(name=collection_name)
-        self.documents_by_paper_id = {document["paper_id"].lower(): document for document in documents}
-        self.documents_by_title = {document["title"].lower(): document for document in documents}
+        self.client = chromadb.PersistentClient(path=str(self.persist_path))
+        try:
+            self.collection = self.client.get_collection(name=collection_name)
+        except Exception:
+            self.collection = None
+        self._refresh_lookup_maps()
+
+    def _refresh_lookup_maps(self) -> None:
+        self.documents_by_paper_id = {document["paper_id"].lower(): document for document in self.documents}
+        self.documents_by_title = {document["title"].lower(): document for document in self.documents}
+
+    def build_from_clean(self) -> "LocalEmbeddingIndex":
+        """Checkpoint-friendly facade: build this collection from clean JSON."""
+        df = pd.read_json(self.settings.paths.clean_json)
+        manifest_path = self.settings.paths.embeddings_json
+        expected_name = self._derive_collection_name(self.settings, manifest_path)
+        if self.collection_name != expected_name:
+            # A custom collection needs a custom manifest name so classmethod
+            # build derives and persists the requested collection independently.
+            manifest_path = self.settings.paths.embeddings_json.with_name(f"{self.collection_name}.json")
+        built = type(self).build(df, self.settings, manifest_path)
+        if built.collection_name != self.collection_name:
+            # The baseline checkpoint explicitly names papers-baseline.
+            built.collection_name = self.collection_name
+        self.documents = built.documents
+        self.persist_path = built.persist_path
+        self.embedding_backend = built.embedding_backend
+        self.embedding_model = built.embedding_model
+        self.client = built.client
+        self.collection = built.collection
+        self._refresh_lookup_maps()
+        return self
 
     @staticmethod
     def _build_documents(df: pd.DataFrame) -> list[dict[str, Any]]:
         records = df.to_dict(orient="records")
         documents: list[dict[str, Any]] = []
         for index, row in enumerate(records):
+            published = pd.to_datetime(row["published"], utc=True, errors="coerce")
             documents.append(
                 {
                     "record_id": f"{row['paper_id']}::{index}",
@@ -54,12 +83,12 @@ class LocalEmbeddingIndex:
                     "metadata": {
                         "paper_id": row["paper_id"],
                         "title": row["title"],
-                        "published": row["published"],
-                        "authors_joined": row["authors_joined"],
-                        "categories_joined": row["categories_joined"],
-                        "summary": row["summary"],
-                        "abs_url": row["abs_url"],
-                        "pdf_url": row["pdf_url"],
+                        "published": published.date().isoformat() if not pd.isna(published) else "",
+                        "authors_joined": str(row["authors_joined"]),
+                        "categories_joined": str(row["categories_joined"]),
+                        "summary": str(row["summary"]),
+                        "abs_url": str(row["abs_url"]),
+                        "pdf_url": str(row["pdf_url"]),
                     },
                 }
             )
@@ -139,6 +168,8 @@ class LocalEmbeddingIndex:
         )
 
     def search(self, query: str, top_k: int | None = None) -> list[SearchResult]:
+        if self.collection is None:
+            raise RuntimeError("Chroma collection is not built; call build_from_clean() or load() first")
         query_embedding = self.embedding_model.embed_query(query)
         results = self.collection.query(
             query_embeddings=[query_embedding],
@@ -164,6 +195,10 @@ class LocalEmbeddingIndex:
                 )
             )
         return scored
+
+    def semantic_search(self, query: str, top_k: int | None = None) -> list[SearchResult]:
+        """Compatibility alias used by the Checkpoint 2 smoke-test command."""
+        return self.search(query, top_k=top_k)
 
     def lookup(self, value: str) -> dict[str, Any] | None:
         needle = value.strip().lower()

@@ -41,6 +41,11 @@ class Paths:
     repaired_answers: Path
     comparison_report: Path
 
+    @property
+    def test_set_json(self) -> Path:
+        """Compatibility alias used by the Checkpoint 2 instructions."""
+        return self.eval_testset
+
 
 @dataclass(frozen=True)
 class Settings:
