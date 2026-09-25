@@ -1,28 +1,28 @@
 from __future__ import annotations
 
+from dataclasses import asdict, fields
 from datetime import datetime
 
 import pandas as pd
 
+from core.utils import normalize_whitespace
 from ingestion.crossref import PaperRecord
 from core.utils import normalize_whitespace
 
 
+<<<<<<< HEAD
 def build_clean_dataframe(records: list[PaperRecord], run_date: datetime) -> pd.DataFrame:
     """Clean raw records into a deduplicated, embedding-ready dataframe.
+=======
+def build_clean_dataframe(raw_records: list[dict | PaperRecord], run_date: datetime) -> pd.DataFrame:
+    """Normalize records and build embedding content with publication age.
+>>>>>>> a42a52f (feat: complete Day 10 data pipeline, observability and repair flow)
 
-    Pseudo-code:
-    1. Normalize title, summary, authors, categories.
-    2. Parse published/updated date.
-    3. Tinh age_days.
-    4. Tao cot helper:
-       - authors_joined
-       - categories_joined
-       - summary_chars
-       - text_for_embedding
-    5. Drop duplicates va filter row xau.
-    6. Sort dataframe va return.
+    Skip records without an ID, title or valid publication date. Keep the first
+    valid record per paper_id and sort by ID for reproducible output.
+    Age uses calendar dates in the supplied run_date, without UTC conversion.
     """
+<<<<<<< HEAD
     columns = [
         "paper_id", "title", "summary", "authors", "categories", "primary_category",
         "published", "updated", "abs_url", "pdf_url", "comment", "authors_joined",
@@ -81,5 +81,53 @@ def build_clean_dataframe(records: list[PaperRecord], run_date: datetime) -> pd.
         pd.DataFrame(rows, columns=columns)
         .drop_duplicates(subset=["paper_id"], keep="first")
         .sort_values(["published", "paper_id"], ascending=[False, True])
+=======
+    run_timestamp = pd.Timestamp(run_date)
+    if pd.isna(run_timestamp):
+        raise ValueError("run_date must be a valid datetime")
+    def clean_text(value: str) -> str:
+        return normalize_whitespace(value or "")
+
+    rows = []
+    for record in raw_records:
+        row = asdict(record) if isinstance(record, PaperRecord) else dict(record)
+        row["paper_id"] = clean_text(row.get("paper_id", "")).lower()
+        row["title"] = clean_text(row.get("title", ""))
+        row["summary"] = clean_text(row.get("summary", ""))
+        published = pd.to_datetime(row.get("published", ""), errors="coerce")
+        if not row["paper_id"] or not row["title"] or pd.isna(published):
+            continue
+        updated = pd.to_datetime(row.get("updated", ""), errors="coerce", utc=True)
+        row["published"] = published.date().isoformat()
+        row["updated"] = updated.date().isoformat() if pd.notna(updated) else ""
+        row["age_days"] = (run_timestamp.date() - published.date()).days
+        for column in ("authors", "categories"):
+            values = row.get(column) or []
+            if isinstance(values, str):
+                values = values.split(",")
+            row[column] = [clean_text(value) for value in values if clean_text(value)]
+            if column == "authors" and not row[column]:
+                row[column] = ["Unknown"]
+            row[f"{column}_joined"] = ", ".join(row[column])
+        row["primary_category"] = row["categories"][0] if row["categories"] else ""
+        row["summary_chars"] = len(row["summary"])
+        row["text_for_embedding"] = (
+            f"Title: {row['title']}\n"
+            f"Authors: {row['authors_joined']}\n"
+            f"Published: {row['published']}\n"
+            f"Categories: {row['categories_joined']}\n"
+            f"Summary: {row['summary']}"
+        )
+        rows.append(row)
+
+    columns = [field.name for field in fields(PaperRecord)] + [
+        "age_days", "authors_joined", "categories_joined", "summary_chars", "text_for_embedding",
+    ]
+    dataframe = pd.DataFrame(rows, columns=columns)
+    dataframe = dataframe.astype({"age_days": "int64", "summary_chars": "int64"})
+    return (
+        dataframe.drop_duplicates(subset="paper_id", keep="first")
+        .sort_values("paper_id")
+>>>>>>> a42a52f (feat: complete Day 10 data pipeline, observability and repair flow)
         .reset_index(drop=True)
     )

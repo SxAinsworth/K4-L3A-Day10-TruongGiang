@@ -4,7 +4,7 @@
   "message-version": "1.0.0",
   "message": {
     "facets": {},
-    "total-results": 103630,
+    "total-results": 103647,
     "items": [
       {
         "indexed": {
@@ -26,7 +26,7 @@
           "domain": [],
           "crossmark-restriction": false
         },
-        "abstract": "<jats:p>\u0412 \u0441\u0442\u0430\u0442\u044c\u0435 \u043f\u0440\u043e\u0432\u0435\u0434\u0435\u043d\u043e \u0438\u0441\u0441\u043b\u0435\u0434\u043e\u0432\u0430\u043d\u0438\u0435 \u043e\u0441\u043e\u0431\u0435\u043d\u043d\u043e\u0441\u0442\u0435\u0439 \u0441\u043d\u0438\u0436\u0435\u043d\u0438\u044f \u0440\u0438\u0441\u043a\u043e\u0432 \u043f\u0440\u0438\u043c\u0435\u043d\u0435\u043d\u0438\u044f LLM (Large Language Model)  \u0432 \u0441\u0444\u0435\u0440\u0435 \u044d\u043a\u043e\u043d\u043e\u043c\u0438\u0447\u0435\u0441\u043a\u043e\u0439 \u0431\u0435\u0437\u043e\u043f\u0430\u0441\u043d\u043e\u0441\u0442\u0438 \u043f\u0440\u0435\u0434\u043f\u0440\u0438\u044f\u0442\u0438\u0439 \u043c\u043e\u043b\u043e\u0447\u043d\u043e\u0439 \u043f\u0440\u043e\u043c\u044b\u0448\u043b\u0435\u043d\u043d\u043e\u0441\u0442\u0438 \u043d\u0430 \u043e\u0441\u043d\u043e\u0432\u0435 \u043f\u043e\u0434\u0445\u043e\u0434\u0430 RAG (Retrieval-Augmented Generation) \u0432 \u0441\u043e\u0432\u0440\u0435\u043c\u0435\u043d\u043d\u044b\u0445  \u0443\u0441\u043b\u043e\u0432\u0438\u044f\u0445. \u0420\u0430\u0441\u0441\u043c\u043e\u0442\u0440\u0435\u043d\u044b \u0440\u0438\u0441\u043a\u0438 \u043f\u0440\u0438\u043c\u0435\u043d\u0435\u043d\u0438\u044f LLM \u0432 \u0441\u0444\u0435\u0440\u0435 \u044d\u043a\u043e\u043d\u043e\u043c\u0438\u0447\u0435\u0441\u043a\u043e\u0439 \u0431\u0435\u0437\u043e\u043f\u0430\u0441\u043d\u043e\u0441\u0442\u0438 \u043f\u0440\u0435\u0434\u043f\u0440\u0438\u044f\u0442\u0438\u0439 \u043c\u043e\u043b\u043e\u0447\u043d\u043e\u0439 \u043f\u0440\u043e\u043c\u044b\u0448\u043b\u0435\u043d\u043d\u043e\u0441\u0442\u0438. \u041f\u043e\u0434\u0440\u043e\u0431\u043d\u043e \u0440\u0430\u0437\u043e\u0431\u0440\u0430\u043d\u044b \u0441\u0446\u0435\u043d\u0430\u0440\u0438\u0438 \u043f\u0440\u0438\u043c\u0435\u043d\u0435\u043d\u0438\u044f LLM+RAG \u0432 \u0440\u043e\u0441\u0441\u0438\u0439\u0441\u043a\u043e\u0439 \u043c\u043e\u043b\u043e\u0447\u043d\u043e\u0439 \u043f\u0440\u043e\u043c\u044b\u0448\u043b\u0435\u043d\u043d\u043e\u0441\u0442\u0438\u00a0\u2013 \u0441 \u043e\u043f\u0438\u0441\u0430\u043d\u0438\u0435\u043c \u043f\u0440\u043e\u0446\u0435\u0441\u0441\u0430, \u0437\u0430\u0434\u0435\u0439\u0441\u0442\u0432\u043e\u0432\u0430\u043d\u043d\u044b\u0445 \u0434\u0430\u043d\u043d\u044b\u0445, \u0440\u0435\u0448\u0430\u0435\u043c\u044b\u0445 \u0440\u0438\u0441\u043a\u043e\u0432 \u0438 \u0434\u043e\u0441\u0442\u0438\u0433\u043d\u0443\u0442\u044b\u0445 \u0440\u0435\u0437\u0443\u043b\u044c\u0442\u0430\u0442\u043e\u0432. \u041f\u043e\u043a\u0430\u0437\u0430\u043d\u043e, \u0447\u0442\u043e \u0432 \u0440\u0435\u0437\u0443\u043b\u044c\u0442\u0430\u0442\u0435 \u0438\u043d\u0442\u0435\u0433\u0440\u0430\u0446\u0438\u044f RAG \u0441 LLM \u0442\u0440\u0430\u043d\u0441\u0444\u043e\u0440\u043c\u0438\u0440\u0443\u0435\u0442 \u0433\u0435\u043d\u0435\u0440\u0430\u0442\u0438\u0432\u043d\u0443\u044e \u043c\u043e\u0434\u0435\u043b\u044c \u0438\u0437 \u043f\u043e\u0442\u0435\u043d\u0446\u0438\u0430\u043b\u044c\u043d\u043e \u043e\u043f\u0430\u0441\u043d\u043e\u0433\u043e \u0438\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442\u0430 \u0432 \u043d\u0430\u0434\u0435\u0436\u043d\u044b\u0439 \u043c\u0435\u0445\u0430\u043d\u0438\u0437\u043c \u043f\u043e\u0434\u0434\u0435\u0440\u0436\u043a\u0438 \u043f\u0440\u0438\u043d\u044f\u0442\u0438\u044f \u0440\u0435\u0448\u0435\u043d\u0438\u0439\u00a0\u2013 \u043e\u0442 \u043c\u043e\u043d\u0438\u0442\u043e\u0440\u0438\u043d\u0433\u0430 \u0443\u0433\u0440\u043e\u0437 \u0444\u0430\u043b\u044c\u0441\u0438\u0444\u0438\u043a\u0430\u0446\u0438\u0438 \u0434\u043e \u043f\u0440\u043e\u0433\u043d\u043e\u0437\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u044f \u044d\u043a\u043e\u043d\u043e\u043c\u0438\u0447\u0435\u0441\u043a\u0438\u0445 \u043f\u043e\u043a\u0430\u0437\u0430\u0442\u0435\u043b\u0435\u0439 \u0441 \u0443\u0447\u0435\u0442\u043e\u043c \u043e\u0442\u0440\u0430\u0441\u043b\u0435\u0432\u043e\u0439 \u0441\u043f\u0435\u0446\u0438\u0444\u0438\u043a\u0438.</jats:p>\n                  <jats:p>The article examines the features of reducing the risks of using LLM (Large Language Model)  in the field of economic security of dairy industry enterprises based on the RAG (Retrieval-Augmented Generation) approach in modern conditions. The risks of using LLM in the field of economic security of dairy industry enterprises are considered. The scenarios of LLM+RAG application in the Russian dairy industry are analyzed in detail, describing the process, the data involved, the risks to be solved and the results achieved. It is shown that as a result, the integration of RAG with LLM transforms the generative model from a potentially dangerous tool into a reliable decision support mechanism, from monitoring fraud threats to forecasting economic indicators based on industry specifics.</jats:p>",
+        "abstract": "<jats:p>В статье проведено исследование особенностей снижения рисков применения LLM (Large Language Model)  в сфере экономической безопасности предприятий молочной промышленности на основе подхода RAG (Retrieval-Augmented Generation) в современных  условиях. Рассмотрены риски применения LLM в сфере экономической безопасности предприятий молочной промышленности. Подробно разобраны сценарии применения LLM+RAG в российской молочной промышленности – с описанием процесса, задействованных данных, решаемых рисков и достигнутых результатов. Показано, что в результате интеграция RAG с LLM трансформирует генеративную модель из потенциально опасного инструмента в надежный механизм поддержки принятия решений – от мониторинга угроз фальсификации до прогнозирования экономических показателей с учетом отраслевой специфики.</jats:p>\n                  <jats:p>The article examines the features of reducing the risks of using LLM (Large Language Model)  in the field of economic security of dairy industry enterprises based on the RAG (Retrieval-Augmented Generation) approach in modern conditions. The risks of using LLM in the field of economic security of dairy industry enterprises are considered. The scenarios of LLM+RAG application in the Russian dairy industry are analyzed in detail, describing the process, the data involved, the risks to be solved and the results achieved. It is shown that as a result, the integration of RAG with LLM transforms the generative model from a potentially dangerous tool into a reliable decision support mechanism, from monitoring fraud threats to forecasting economic indicators based on industry specifics.</jats:p>",
         "DOI": "10.47576/2949-1894.2026.7.7.023",
         "type": "journal-article",
         "created": {
@@ -44,17 +44,17 @@
         "source": "Crossref",
         "is-referenced-by-count": 0,
         "title": [
-          "\u0421\u043d\u0438\u0436\u0435\u043d\u0438\u0435 \u0440\u0438\u0441\u043a\u043e\u0432 \u043f\u0440\u0438\u043c\u0435\u043d\u0435\u043d\u0438\u044f LLM (Large Language Model) \u0432 \u0441\u0444\u0435\u0440\u0435 \u044d\u043a\u043e\u043d\u043e\u043c\u0438\u0447\u0435\u0441\u043a\u043e\u0439 \u0431\u0435\u0437\u043e\u043f\u0430\u0441\u043d\u043e\u0441\u0442\u0438 \u043f\u0440\u0435\u0434\u043f\u0440\u0438\u044f\u0442\u0438\u0439 \u043c\u043e\u043b\u043e\u0447\u043d\u043e\u0439 \u043f\u0440\u043e\u043c\u044b\u0448\u043b\u0435\u043d\u043d\u043e\u0441\u0442\u0438 \u043d\u0430 \u043e\u0441\u043d\u043e\u0432\u0435 \u043f\u043e\u0434\u0445\u043e\u0434\u0430 RAG (Retrieval-Augmented Generation)"
+          "Снижение рисков применения LLM (Large Language Model) в сфере экономической безопасности предприятий молочной промышленности на основе подхода RAG (Retrieval-Augmented Generation)"
         ],
         "prefix": "10.47576",
         "author": [
           {
-            "given": "\u0418.\u0412.",
-            "family": "\u0415\u0440\u043c\u0430\u043a\u043e\u0432",
+            "given": "И.В.",
+            "family": "Ермаков",
             "sequence": "first",
             "affiliation": [
               {
-                "name": "\u0418\u043d\u0441\u0442\u0438\u0442\u0443\u0442 \u044d\u043a\u043e\u043d\u043e\u043c\u0438\u0447\u0435\u0441\u043a\u0438\u0445 \u0440\u0435\u0433\u0438\u043e\u043d\u0430\u043b\u044c\u043d\u044b\u0445 \u0438\u0441\u0441\u043b\u0435\u0434\u043e\u0432\u0430\u043d\u0438\u0439"
+                "name": "Институт экономических региональных исследований"
               }
             ],
             "role": [
@@ -65,12 +65,12 @@
             ]
           },
           {
-            "given": "\u0412.\u0412.",
-            "family": "\u0424\u0438\u043b\u0430\u0442\u043e\u0432",
+            "given": "В.В.",
+            "family": "Филатов",
             "sequence": "first",
             "affiliation": [
               {
-                "name": "\u0420\u043e\u0441\u0441\u0438\u0439\u0441\u043a\u0438\u0439 \u0433\u043e\u0441\u0443\u0434\u0430\u0440\u0441\u0442\u0432\u0435\u043d\u043d\u044b\u0439 \u0430\u0433\u0440\u0430\u0440\u043d\u044b\u0439 \u0443\u043d\u0438\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442 \u041c\u0421\u0425\u0410 \u0438\u043c\u0435\u043d\u0438 \u041a. \u0410. \u0422\u0438\u043c\u0438\u0440\u044f\u0437\u0435\u0432\u0430; \u041c\u043e\u0441\u043a\u043e\u0432\u0441\u043a\u0438\u0439 \u0442\u0435\u0445\u043d\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u0443\u043d\u0438\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442 \u0441\u0432\u044f\u0437\u0438 \u0438 \u0438\u043d\u0444\u043e\u0440\u043c\u0430\u0442\u0438\u043a\u0438; \u042d\u043a\u0441\u043f\u0435\u0440\u0442\u043d\u043e-\u0430\u043d\u0430\u043b\u0438\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u0446\u0435\u043d\u0442\u0440"
+                "name": "Российский государственный аграрный университет МСХА имени К. А. Тимирязева; Московский технический университет связи и информатики; Экспертно-аналитический центр"
               }
             ],
             "role": [
@@ -94,15 +94,15 @@
         "reference": [
           {
             "key": "1",
-            "unstructured": "\u0421\u0432\u0438\u0434\u0435\u0442\u0435\u043b\u044c\u0441\u0442\u0432\u043e \u043e \u0433\u043e\u0441\u0443\u0434\u0430\u0440\u0441\u0442\u0432\u0435\u043d\u043d\u043e\u0439 \u0440\u0435\u0433\u0438\u0441\u0442\u0440\u0430\u0446\u0438\u0438 \u043f\u0440\u043e\u0433\u0440\u0430\u043c\u043c\u044b \u0434\u043b\u044f \u042d\u0412\u041c \u2116 2026614754 \u0420\u0424. \u00ab\u041f\u0440\u043e\u0433\u0440\u0430\u043c\u043c\u043d\u044b\u0439 \u043a\u043e\u043c\u043f\u043b\u0435\u043a\u0441 \u0434\u043b\u044f \u0430\u0432\u0442\u043e\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u043e\u0439 \u0433\u0435\u043d\u0435\u0440\u0430\u0446\u0438\u0438 \u0431\u0430\u0437 \u0437\u043d\u0430\u043d\u0438\u0439, \u043f\u043e\u0434\u0433\u043e\u0442\u043e\u0432\u043a\u0438 \u0434\u0430\u043d\u043d\u044b\u0445 \u043a \u0437\u0430\u0433\u0440\u0443\u0437\u043a\u0435 \u0432 \u0433\u0440\u0430\u0444\u043e\u0432\u044b\u0435 \u0445\u0440\u0430\u043d\u0438\u043b\u0438\u0449\u0430, \u043f\u043e\u0441\u0442\u0440\u043e\u0435\u043d\u0438\u044f \u043f\u0440\u0435\u0434\u043c\u0435\u0442\u043d\u043e-\u043e\u0440\u0438\u0435\u043d\u0442\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u044b\u0445 \u043e\u043d\u0442\u043e\u043b\u043e\u0433\u0438\u0439 \u0438 \u0432\u043d\u0435\u0434\u0440\u0435\u043d\u0438\u044f \u0441\u0438\u0441\u0442\u0435\u043c \u0438\u043d\u0442\u0435\u043b\u043b\u0435\u043a\u0442\u0443\u0430\u043b\u044c\u043d\u043e\u0433\u043e \u0430\u043d\u0430\u043b\u0438\u0437\u0430 \u0438 \u043f\u043e\u0434\u0434\u0435\u0440\u0436\u043a\u0438 \u043f\u0440\u0438\u043d\u044f\u0442\u0438\u044f \u0440\u0435\u0448\u0435\u043d\u0438\u0439 \u0432 \u043f\u0440\u043e\u0435\u043a\u0442\u0430\u0445 \u0446\u0438\u0444\u0440\u043e\u0432\u043e\u0439 \u0442\u0440\u0430\u043d\u0441\u0444\u043e\u0440\u043c\u0430\u0446\u0438\u0438\u00bb : \u0437\u0430\u044f\u0432\u043b. 10.02.2026 : \u043e\u043f\u0443\u0431\u043b. 17.02.2026 / \u0418. \u0412. \u0415\u0440\u043c\u0430\u043a\u043e\u0432, \u0410. \u041b. \u0417\u043e\u043b\u043a\u0438\u043d, \u041b. \u0410. \u041a\u0430\u0440\u0433\u0438\u043d\u0430 [\u0438 \u0434\u0440.]."
+            "unstructured": "Свидетельство о государственной регистрации программы для ЭВМ № 2026614754 РФ. «Программный комплекс для автоматической генерации баз знаний, подготовки данных к загрузке в графовые хранилища, построения предметно-ориентированных онтологий и внедрения систем интеллектуального анализа и поддержки принятия решений в проектах цифровой трансформации» : заявл. 10.02.2026 : опубл. 17.02.2026 / И. В. Ермаков, А. Л. Золкин, Л. А. Каргина [и др.]."
           },
           {
             "key": "2",
-            "unstructured": "\u0421\u0432\u0438\u0434\u0435\u0442\u0435\u043b\u044c\u0441\u0442\u0432\u043e \u043e \u0433\u043e\u0441\u0443\u0434\u0430\u0440\u0441\u0442\u0432\u0435\u043d\u043d\u043e\u0439 \u0440\u0435\u0433\u0438\u0441\u0442\u0440\u0430\u0446\u0438\u0438 \u043f\u0440\u043e\u0433\u0440\u0430\u043c\u043c\u044b \u0434\u043b\u044f \u042d\u0412\u041c \u2116 2025693835 \u0420\u0424. \u041f\u043b\u0430\u0442\u0444\u043e\u0440\u043c\u0430 \u0446\u0438\u0444\u0440\u043e\u0432\u043e\u0433\u043e \u043a\u043e\u043c\u043f\u043b\u0430\u0435\u043d\u0441\u0430 \u0438 \u0430\u0443\u0434\u0438\u0442\u0430 \u043f\u0440\u0430\u0432\u043e\u0432\u044b\u0445 \u0440\u0438\u0441\u043a\u043e\u0432 \u0432 \u043a\u043e\u0440\u043f\u043e\u0440\u0430\u0442\u0438\u0432\u043d\u044b\u0445 \u0431\u0438\u0437\u043d\u0435\u0441-\u043f\u0440\u043e\u0446\u0435\u0441\u0441\u0430\u0445 \u0438 \u043f\u043e\u0434\u043a\u043e\u043d\u0442\u0440\u043e\u043b\u044c\u043d\u044b\u0445 \u043f\u0440\u043e\u0446\u0435\u0434\u0443\u0440\u0430\u0445 : \u0437\u0430\u044f\u0432\u043b. 25.11.2025 : \u043e\u043f\u0443\u0431\u043b. 02.12.2025 / \u0418. \u0412. \u0415\u0440\u043c\u0430\u043a\u043e\u0432, \u0412. \u0412. \u0424\u0438\u043b\u0430\u0442\u043e\u0432, \u0410. \u041b. \u0417\u043e\u043b\u043a\u0438\u043d [\u0438 \u0434\u0440.]."
+            "unstructured": "Свидетельство о государственной регистрации программы для ЭВМ № 2025693835 РФ. Платформа цифрового комплаенса и аудита правовых рисков в корпоративных бизнес-процессах и подконтрольных процедурах : заявл. 25.11.2025 : опубл. 02.12.2025 / И. В. Ермаков, В. В. Филатов, А. Л. Золкин [и др.]."
           },
           {
             "key": "3",
-            "unstructured": "\u0421\u0432\u0438\u0434\u0435\u0442\u0435\u043b\u044c\u0441\u0442\u0432\u043e \u043e \u0433\u043e\u0441\u0443\u0434\u0430\u0440\u0441\u0442\u0432\u0435\u043d\u043d\u043e\u0439 \u0440\u0435\u0433\u0438\u0441\u0442\u0440\u0430\u0446\u0438\u0438 \u043f\u0440\u043e\u0433\u0440\u0430\u043c\u043c\u044b \u0434\u043b\u044f \u042d\u0412\u041c \u2116 2025694648 \u0420\u0424. \u0421\u0438\u0441\u0442\u0435\u043c\u0430 \u0430\u0443\u0434\u0438\u0442\u0430 \u0440\u0435\u0433\u0443\u043b\u044f\u0442\u043e\u0440\u043d\u044b\u0445 \u0440\u0438\u0441\u043a\u043e\u0432 \u0432 \u0444\u0438\u043d\u0430\u043d\u0441\u043e\u0432\u044b\u0445 \u0438 \u043a\u043e\u0440\u043f\u043e\u0440\u0430\u0442\u0438\u0432\u043d\u044b\u0445 \u043f\u0440\u043e\u0446\u0435\u0441\u0441\u0430\u0445 : \u0437\u0430\u044f\u0432\u043b. 25.11.2025 : \u043e\u043f\u0443\u0431\u043b. 08.12.2025 / \u0418. \u0412. \u0415\u0440\u043c\u0430\u043a\u043e\u0432, \u0412. \u0412. \u0424\u0438\u043b\u0430\u0442\u043e\u0432, \u0410. \u041b. \u0417\u043e\u043b\u043a\u0438\u043d, \u0420. \u042f. \u0412\u0430\u043a\u0443\u043b\u0435\u043d\u043a\u043e."
+            "unstructured": "Свидетельство о государственной регистрации программы для ЭВМ № 2025694648 РФ. Система аудита регуляторных рисков в финансовых и корпоративных процессах : заявл. 25.11.2025 : опубл. 08.12.2025 / И. В. Ермаков, В. В. Филатов, А. Л. Золкин, Р. Я. Вакуленко."
           }
         ],
         "container-title": [
@@ -120,7 +120,7 @@
           "date-time": "2026-06-17T08:00:36Z",
           "timestamp": 1781683236000
         },
-        "score": 39.829006,
+        "score": 39.881557,
         "resource": {
           "primary": {
             "URL": "https://ieiap.ru/journal"
@@ -258,7 +258,7 @@
           "date-time": "2026-09-15T08:27:58Z",
           "timestamp": 1789460878000
         },
-        "score": 37.863228,
+        "score": 37.862385,
         "resource": {
           "primary": {
             "URL": "https://ace.ewapub.com/article/view/36624"
@@ -425,7 +425,7 @@
           "date-time": "2026-09-13T10:04:32Z",
           "timestamp": 1789293872000
         },
-        "score": 37.853508,
+        "score": 37.846817,
         "resource": {
           "primary": {
             "URL": "https://journals.zeuspress.org/index.php/conference/article/view/1352"
@@ -628,7 +628,7 @@
           "date-time": "2026-04-07T00:32:52Z",
           "timestamp": 1775521972000
         },
-        "score": 37.286972,
+        "score": 37.272614,
         "resource": {
           "primary": {
             "URL": "https://www.preprints.org/manuscript/202604.0339/v1"
@@ -696,7 +696,7 @@
         "short-container-title": [
           "JAIAA"
         ],
-        "abstract": "<jats:p>The rapid evolution of large language models (LLMs) has catalyzed a shift from passive AI systems toward autonomous agentic architectures capable of reasoning, memory, tool use, and multi-agent collaboration. This bibliometric review characterizes the emerging field through 810 publications retrieved from the Web of Science Core Collection for the period 2023\u20132025. Annual output rose sharply over this window\u2014from 4 publications in 2023 to 96 in 2024 and 710 in 2025\u2014accompanied by a parallel rise in citations, indicating rapid mainstream adoption. Author-keyword analysis reveals a landscape dominated by large language models, artificial intelligence, and multi-agent systems, with agentic AI, generative AI, and retrieval-augmented generation (RAG) emerging as core themes. Research output is geographically concentrated, led by China and the United States, and is distributed across a broad range of engineering, applied-science, and domain-specific journals rather than a single specialist venue, reflecting the field's cross-disciplinary uptake. Synthesizing this corpus, we organize the technical landscape around reasoning, memory, tool integration and RAG, and multi-agent orchestration; survey application domains spanning healthcare, scientific discovery, education, and software engineering, with emerging activity in finance and law; and analyze the principal challenges\u2014hallucination, trust and robustness, inter-agent coordination, scalability, and governance. The review provides a structured, evidence-based map of agentic AI research to orient researchers and practitioners navigating this rapidly evolving field.</jats:p>",
+        "abstract": "<jats:p>The rapid evolution of large language models (LLMs) has catalyzed a shift from passive AI systems toward autonomous agentic architectures capable of reasoning, memory, tool use, and multi-agent collaboration. This bibliometric review characterizes the emerging field through 810 publications retrieved from the Web of Science Core Collection for the period 2023–2025. Annual output rose sharply over this window—from 4 publications in 2023 to 96 in 2024 and 710 in 2025—accompanied by a parallel rise in citations, indicating rapid mainstream adoption. Author-keyword analysis reveals a landscape dominated by large language models, artificial intelligence, and multi-agent systems, with agentic AI, generative AI, and retrieval-augmented generation (RAG) emerging as core themes. Research output is geographically concentrated, led by China and the United States, and is distributed across a broad range of engineering, applied-science, and domain-specific journals rather than a single specialist venue, reflecting the field's cross-disciplinary uptake. Synthesizing this corpus, we organize the technical landscape around reasoning, memory, tool integration and RAG, and multi-agent orchestration; survey application domains spanning healthcare, scientific discovery, education, and software engineering, with emerging activity in finance and law; and analyze the principal challenges—hallucination, trust and robustness, inter-agent coordination, scalability, and governance. The review provides a structured, evidence-based map of agentic AI research to orient researchers and practitioners navigating this rapidly evolving field.</jats:p>",
         "DOI": "10.63646/kpqm1958",
         "type": "journal-article",
         "created": {
@@ -793,7 +793,7 @@
           "date-time": "2026-07-17T01:44:05Z",
           "timestamp": 1784252645000
         },
-        "score": 37.148632,
+        "score": 37.120922,
         "resource": {
           "primary": {
             "URL": "https://inatgi.net/index.php/jaiaa/article/view/806"
@@ -893,7 +893,7 @@
             ]
           ]
         },
-        "abstract": "<title>Abstract</title>\n                <p>Urban Cyber-Physical Systems (UCPS) support sustainable cities through the integration of Internet of Things (IoT), Artificial Intelligence (AI), and digi-tal infrastructures for environmental monitoring, urban planning, and resilient public services. However, ensuring regulatory compliance is increasingly chal-lenging because environmental, cybersecurity, municipal planning, and AI gov-ernance regulations evolve continuously across jurisdictions. Existing Retrieval-Augmented Generation (RAG) approaches improve evidence retrieval but remain vulnerable to hallucinations, regulatory supersession errors, and jurisdictional inconsistencies due to the absence of deterministic regulatory verification. This paper proposes a Verification-First Agentic Retrieval-Augmented Generation framework for trustworthy regulatory compliance reasoning in UCPS. The framework incorporates a Retrieval Agent, a deterministic Critic Agent, and a Formatting Agent to validate temporal validity, regulatory supersession, juris-dictional applicability, and compliance scope before language-model generation. A curated regulatory corpus and a benchmark comprising 78 regulatory com-pliance probes were used for evaluation against BM25, Dense RAG, Self-RAG, and Corrective RAG (CRAG). The proposed framework achieved a superses-sion detection rate of 0.88, perfect standalone Critic Agent validation (Precision = Recall\u2009=\u2009F1-score\u2009=\u20091.00), improved retrieval ranking quality (nDCG@5\u2009=\u20090.75), and competitive computational efficiency. These results demonstrate that deterministic verification significantly improves the reliability, transparency, and trustworthiness of regulatory reasoning for sustainable urban governance.</p>",
+        "abstract": "<title>Abstract</title>\n                <p>Urban Cyber-Physical Systems (UCPS) support sustainable cities through the integration of Internet of Things (IoT), Artificial Intelligence (AI), and digi-tal infrastructures for environmental monitoring, urban planning, and resilient public services. However, ensuring regulatory compliance is increasingly chal-lenging because environmental, cybersecurity, municipal planning, and AI gov-ernance regulations evolve continuously across jurisdictions. Existing Retrieval-Augmented Generation (RAG) approaches improve evidence retrieval but remain vulnerable to hallucinations, regulatory supersession errors, and jurisdictional inconsistencies due to the absence of deterministic regulatory verification. This paper proposes a Verification-First Agentic Retrieval-Augmented Generation framework for trustworthy regulatory compliance reasoning in UCPS. The framework incorporates a Retrieval Agent, a deterministic Critic Agent, and a Formatting Agent to validate temporal validity, regulatory supersession, juris-dictional applicability, and compliance scope before language-model generation. A curated regulatory corpus and a benchmark comprising 78 regulatory com-pliance probes were used for evaluation against BM25, Dense RAG, Self-RAG, and Corrective RAG (CRAG). The proposed framework achieved a superses-sion detection rate of 0.88, perfect standalone Critic Agent validation (Precision = Recall = F1-score = 1.00), improved retrieval ranking quality (nDCG@5 = 0.75), and competitive computational efficiency. These results demonstrate that deterministic verification significantly improves the reliability, transparency, and trustworthiness of regulatory reasoning for sustainable urban governance.</p>",
         "DOI": "10.21203/rs.3.rs-10349437/v1",
         "type": "posted-content",
         "created": {
@@ -973,7 +973,7 @@
           "date-time": "2026-09-12T16:12:33Z",
           "timestamp": 1789229553000
         },
-        "score": 36.501316,
+        "score": 36.506958,
         "resource": {
           "primary": {
             "URL": "https://www.researchsquare.com/article/rs-10349437/v1"
@@ -1096,7 +1096,7 @@
           "date-time": "2026-05-06T16:40:10Z",
           "timestamp": 1778085610000
         },
-        "score": 36.46317,
+        "score": 36.462696,
         "resource": {
           "primary": {
             "URL": "https://isjem.com/download/speculative-retrieval-augmented-generation-for-cost-efficient-large-language-model-inference/"
@@ -1311,7 +1311,7 @@
           },
           {
             "key": "ref_5",
-            "unstructured": "Dimyadi, J., Amor, R., and Spearpoint, M. (2013, January 19\u201323). Automated building code compliance checking\u2014Where is it at?. Proceedings of the 19th International CIB World Building Congress, Brisbane, QLD, Australia."
+            "unstructured": "Dimyadi, J., Amor, R., and Spearpoint, M. (2013, January 19–23). Automated building code compliance checking—Where is it at?. Proceedings of the 19th International CIB World Building Congress, Brisbane, QLD, Australia."
           },
           {
             "key": "ref_6",
@@ -1334,25 +1334,25 @@
           {
             "key": "ref_8",
             "doi-asserted-by": "crossref",
-            "unstructured": "Redmon, J., Divvala, S., Girshick, R., and Farhadi, A. (2016). You only look once: Unified, real-time object detection. Proceedings of the IEEE Computer Society Conference on Computer Vision and Pattern Recognition, Las Vegas, NV, USA, 27\u201330 June 2016, IEEE.",
+            "unstructured": "Redmon, J., Divvala, S., Girshick, R., and Farhadi, A. (2016). You only look once: Unified, real-time object detection. Proceedings of the IEEE Computer Society Conference on Computer Vision and Pattern Recognition, Las Vegas, NV, USA, 27–30 June 2016, IEEE.",
             "DOI": "10.1109/CVPR.2016.91"
           },
           {
             "key": "ref_9",
             "doi-asserted-by": "crossref",
-            "unstructured": "He, K., Gkioxari, G., Doll\u00e1r, P., and Girshick, R. (2017, January 22\u201329). Mask R-CNN. Proceedings of the IEEE International Conference on Computer Vision, Venice, Italy.",
+            "unstructured": "He, K., Gkioxari, G., Dollár, P., and Girshick, R. (2017, January 22–29). Mask R-CNN. Proceedings of the IEEE International Conference on Computer Vision, Venice, Italy.",
             "DOI": "10.1109/ICCV.2017.322"
           },
           {
             "key": "ref_10",
             "doi-asserted-by": "crossref",
-            "unstructured": "Long, J., Shelhamer, E., and Darrell, T. (2015). Fully convolutional networks for semantic segmentation. Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, Boston, MA, USA, 7\u201312 June 2015, IEEE.",
+            "unstructured": "Long, J., Shelhamer, E., and Darrell, T. (2015). Fully convolutional networks for semantic segmentation. Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, Boston, MA, USA, 7–12 June 2015, IEEE.",
             "DOI": "10.1109/CVPR.2015.7298965"
           },
           {
             "key": "ref_11",
             "doi-asserted-by": "crossref",
-            "unstructured": "Lin, T.-Y., Doll\u00e1r, P., Girshick, R., He, K., Hariharan, B., and Belongie, S. (2017). Feature pyramid networks for object detection. Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR), Honolulu, HI, USA, 21\u201326 July 2017, IEEE.",
+            "unstructured": "Lin, T.-Y., Dollár, P., Girshick, R., He, K., Hariharan, B., and Belongie, S. (2017). Feature pyramid networks for object detection. Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR), Honolulu, HI, USA, 21–26 July 2017, IEEE.",
             "DOI": "10.1109/CVPR.2017.106"
           },
           {
@@ -1449,7 +1449,7 @@
           },
           {
             "key": "ref_24",
-            "unstructured": "Guo, T., Chen, X., Wang, Y., Chang, R., Pei, S., Chawla, N.V., Wiest, O., and Zhang, X. (2024, January 3\u20139). Large language model based multi-agents: A survey of progress and challenges. Proceedings of the International Joint Conference on Artificial Intelligence (IJCAI), Jeju, Republic of Korea. Available online: https://arxiv.org/abs/2402.01680."
+            "unstructured": "Guo, T., Chen, X., Wang, Y., Chang, R., Pei, S., Chawla, N.V., Wiest, O., and Zhang, X. (2024, January 3–9). Large language model based multi-agents: A survey of progress and challenges. Proceedings of the International Joint Conference on Artificial Intelligence (IJCAI), Jeju, Republic of Korea. Available online: https://arxiv.org/abs/2402.01680."
           },
           {
             "key": "ref_25",
@@ -1505,7 +1505,7 @@
           {
             "key": "ref_32",
             "doi-asserted-by": "crossref",
-            "unstructured": "Fan, W., Ding, Y., Ning, L., Wang, S., Li, H., Yin, D., Chua, T.-S., and Li, Q. (2024, January 25\u201329). A Survey on RAG Meeting LLMs: Towards Retrieval-Augmented Large Language Models. Proceedings of the ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD), Barcelona, Spain.",
+            "unstructured": "Fan, W., Ding, Y., Ning, L., Wang, S., Li, H., Yin, D., Chua, T.-S., and Li, Q. (2024, January 25–29). A Survey on RAG Meeting LLMs: Towards Retrieval-Augmented Large Language Models. Proceedings of the ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD), Barcelona, Spain.",
             "DOI": "10.1145/3637528.3671470"
           },
           {
@@ -1588,7 +1588,7 @@
           "date-time": "2026-07-02T10:56:27Z",
           "timestamp": 1782989787000
         },
-        "score": 35.60302,
+        "score": 35.50456,
         "resource": {
           "primary": {
             "URL": "https://www.mdpi.com/2075-5309/16/13/2637"
@@ -1667,7 +1667,7 @@
           "domain": [],
           "crossmark-restriction": false
         },
-        "abstract": "<sec>\n                  <title>BACKGROUND</title>\n                  <p>There is evidence of rapid adoption of large language models (LLMs) in undergraduate medical education, with medical students using it to support their learning. This raises concerns particularly around the accuracy of LLM-generated information students are learning. Retrieval-augmented generation (RAG), which grounds a LLM in curated materials, may be a strategy to improve their accuracy.</p>\n                </sec>\n                <sec>\n                  <title>OBJECTIVE</title>\n                  <p>This study investigates if grounding LLM outputs in verifiable sources using RAG impacts trust and perceived usability amongst medical students.</p>\n                </sec>\n                <sec>\n                  <title>METHODS</title>\n                  <p>In a four-month qualitative study, second-year medical students at Bristol Medical School used a RAG-enabled LLM (NotebookLM) to help them learn course content. Following this, their perspectives were explored using a focus group and survey was. Qualitative data was analysed using thematic analysis and was supplemented by Likert scale data.</p>\n                </sec>\n                <sec>\n                  <title>RESULTS</title>\n                  <p>RAG-based LLMs were perceived as more reliable than standard LLM responses mainly due to the transparency of and control over information sources. The system functioned as an accessible, on-demand learning resource, improving efficiency and supporting self-directed study. Students continued to use strategies to cross check generated information. They demonstrated some awareness of ethical concerns, mostly around the environmental impact of LLMs and data privacy.</p>\n                </sec>\n                <sec>\n                  <title>CONCLUSIONS</title>\n                  <p>These findings suggest that RAG may enhance students\u2019 trust in LLM outputs while maintaining their benefit as a flexible \u2018study partner\u2019. It highlights RAG as a strategy that educators can use to support students who use LLMs in the context of increasing. However, the impact of RAG-based LLMs over a longer period and on learning outcomes requires further evaluation.</p>\n                </sec>",
+        "abstract": "<sec>\n                  <title>BACKGROUND</title>\n                  <p>There is evidence of rapid adoption of large language models (LLMs) in undergraduate medical education, with medical students using it to support their learning. This raises concerns particularly around the accuracy of LLM-generated information students are learning. Retrieval-augmented generation (RAG), which grounds a LLM in curated materials, may be a strategy to improve their accuracy.</p>\n                </sec>\n                <sec>\n                  <title>OBJECTIVE</title>\n                  <p>This study investigates if grounding LLM outputs in verifiable sources using RAG impacts trust and perceived usability amongst medical students.</p>\n                </sec>\n                <sec>\n                  <title>METHODS</title>\n                  <p>In a four-month qualitative study, second-year medical students at Bristol Medical School used a RAG-enabled LLM (NotebookLM) to help them learn course content. Following this, their perspectives were explored using a focus group and survey was. Qualitative data was analysed using thematic analysis and was supplemented by Likert scale data.</p>\n                </sec>\n                <sec>\n                  <title>RESULTS</title>\n                  <p>RAG-based LLMs were perceived as more reliable than standard LLM responses mainly due to the transparency of and control over information sources. The system functioned as an accessible, on-demand learning resource, improving efficiency and supporting self-directed study. Students continued to use strategies to cross check generated information. They demonstrated some awareness of ethical concerns, mostly around the environmental impact of LLMs and data privacy.</p>\n                </sec>\n                <sec>\n                  <title>CONCLUSIONS</title>\n                  <p>These findings suggest that RAG may enhance students’ trust in LLM outputs while maintaining their benefit as a flexible ‘study partner’. It highlights RAG as a strategy that educators can use to support students who use LLMs in the context of increasing. However, the impact of RAG-based LLMs over a longer period and on learning outcomes requires further evaluation.</p>\n                </sec>",
         "DOI": "10.2196/preprints.106157",
         "type": "posted-content",
         "created": {
@@ -1684,7 +1684,7 @@
         "source": "Crossref",
         "is-referenced-by-count": 0,
         "title": [
-          "Does retrieval-augmented generation impact medical students\u2019 perceptions of large language models? (Preprint)"
+          "Does retrieval-augmented generation impact medical students’ perceptions of large language models? (Preprint)"
         ],
         "prefix": "10.2196",
         "author": [
@@ -1750,7 +1750,7 @@
           "date-time": "2026-07-06T03:55:08Z",
           "timestamp": 1783310108000
         },
-        "score": 35.513443,
+        "score": 35.50364,
         "resource": {
           "primary": {
             "URL": "http://preprints.jmir.org/preprint/106157"
@@ -1943,7 +1943,7 @@
           {
             "key": "ref_3",
             "doi-asserted-by": "crossref",
-            "unstructured": "Gehrmann, S., Strobelt, H., and Rush, A.M. (2019). GLTR: Statistical Detection and Visualization of Generated Text. Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics: System Demonstrations, Florence, Italy, 28 July\u20132 August 2019, Association for Computational Linguistics.",
+            "unstructured": "Gehrmann, S., Strobelt, H., and Rush, A.M. (2019). GLTR: Statistical Detection and Visualization of Generated Text. Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics: System Demonstrations, Florence, Italy, 28 July–2 August 2019, Association for Computational Linguistics.",
             "DOI": "10.18653/v1/P19-3019"
           },
           {
@@ -1953,11 +1953,11 @@
             "volume": "Volume 1",
             "author": "Devlin",
             "year": "2019",
-            "journal-title": "Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Minneapolis, MN, USA, 2\u20137 June 2019"
+            "journal-title": "Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Minneapolis, MN, USA, 2–7 June 2019"
           },
           {
             "key": "ref_5",
-            "unstructured": "He, P., Liu, X., Gao, J., and Chen, W. (2021, January 3\u20137). DeBERTa: Decoding-Enhanced BERT with Disentangled Attention. Proceedings of the 9th International Conference on Learning Representations (ICLR 2021), Virtual Event, Austria."
+            "unstructured": "He, P., Liu, X., Gao, J., and Chen, W. (2021, January 3–7). DeBERTa: Decoding-Enhanced BERT with Disentangled Attention. Proceedings of the 9th International Conference on Learning Representations (ICLR 2021), Virtual Event, Austria."
           },
           {
             "key": "ref_6",
@@ -1966,7 +1966,7 @@
             "volume": "Volume 202",
             "author": "Mitchell",
             "year": "2023",
-            "journal-title": "Proceedings of the 40th International Conference on Machine Learning (ICML 2023), Honolulu, HI, USA, 23\u201329 July 2023"
+            "journal-title": "Proceedings of the 40th International Conference on Machine Learning (ICML 2023), Honolulu, HI, USA, 23–29 July 2023"
           },
           {
             "key": "ref_7",
@@ -1975,7 +1975,7 @@
             "volume": "Volume 202",
             "author": "Kirchenbauer",
             "year": "2023",
-            "journal-title": "Proceedings of the 40th International Conference on Machine Learning (ICML 2023), Honolulu, HI, USA, 23\u201329 July 2023"
+            "journal-title": "Proceedings of the 40th International Conference on Machine Learning (ICML 2023), Honolulu, HI, USA, 23–29 July 2023"
           },
           {
             "key": "ref_8",
@@ -2007,7 +2007,7 @@
           },
           {
             "key": "ref_11",
-            "unstructured": "Bao, G., Zhao, Y., Teng, Z., Yang, L., and Zhang, Y. (2024, January 7\u201311). Fast-DetectGPT: Efficient Zero-Shot Detection of Machine-Generated Text via Conditional Probability Curvature. Proceedings of the Twelfth International Conference on Learning Representations (ICLR 2024), Vienna, Austria."
+            "unstructured": "Bao, G., Zhao, Y., Teng, Z., Yang, L., and Zhang, Y. (2024, January 7–11). Fast-DetectGPT: Efficient Zero-Shot Detection of Machine-Generated Text via Conditional Probability Curvature. Proceedings of the Twelfth International Conference on Learning Representations (ICLR 2024), Vienna, Austria."
           },
           {
             "key": "ref_12",
@@ -2023,7 +2023,7 @@
           },
           {
             "key": "ref_15",
-            "unstructured": "He, P., Gao, J., and Chen, W. (2023, January 1\u20135). DeBERTaV3: Improving DeBERTa Using ELECTRA-Style Pre-Training with Gradient-Disentangled Embedding Sharing. Proceedings of the Eleventh International Conference on Learning Representations (ICLR 2023), Kigali, Rwanda."
+            "unstructured": "He, P., Gao, J., and Chen, W. (2023, January 1–5). DeBERTaV3: Improving DeBERTa Using ELECTRA-Style Pre-Training with Gradient-Disentangled Embedding Sharing. Proceedings of the Eleventh International Conference on Learning Representations (ICLR 2023), Kigali, Rwanda."
           },
           {
             "key": "ref_16",
@@ -2038,7 +2038,7 @@
           {
             "key": "ref_18",
             "doi-asserted-by": "crossref",
-            "unstructured": "Jawahar, G., Abdul-Mageed, M., and Lakshmanan, L.V.S. (2020, January 8\u201313). Automatic Detection of Machine Generated Text: A Critical Survey. Proceedings of the 28th International Conference on Computational Linguistics (COLING 2020), Barcelona, Spain.",
+            "unstructured": "Jawahar, G., Abdul-Mageed, M., and Lakshmanan, L.V.S. (2020, January 8–13). Automatic Detection of Machine Generated Text: A Critical Survey. Proceedings of the 28th International Conference on Computational Linguistics (COLING 2020), Barcelona, Spain.",
             "DOI": "10.18653/v1/2020.coling-main.208"
           },
           {
@@ -2076,7 +2076,7 @@
             "volume": "Volume 1",
             "author": "Wang",
             "year": "2024",
-            "journal-title": "Proceedings of the 18th Conference of the European Chapter of the Association for Computational Linguistics (Volume 1: 693 Long Papers), St. Julian\u2019s, Malta, 17\u201321 March 2024"
+            "journal-title": "Proceedings of the 18th Conference of the European Chapter of the Association for Computational Linguistics (Volume 1: 693 Long Papers), St. Julian’s, Malta, 17–21 March 2024"
           },
           {
             "key": "ref_26",
@@ -2144,7 +2144,7 @@
           "date-time": "2026-08-25T08:39:01Z",
           "timestamp": 1787647141000
         },
-        "score": 35.195866,
+        "score": 35.168247,
         "resource": {
           "primary": {
             "URL": "https://www.mdpi.com/2673-9585/6/3/22"
@@ -2319,7 +2319,7 @@
           "date-time": "2026-09-15T11:49:09Z",
           "timestamp": 1789472949000
         },
-        "score": 35.107426,
+        "score": 35.10514,
         "resource": {
           "primary": {
             "URL": "https://www.researchsquare.com/article/rs-10489777/v1"
@@ -2408,7 +2408,7 @@
             ]
           ]
         },
-        "abstract": "<title>Abstract</title>\n                <p>Enterprise adoption of artificial intelligence (AI) systems, including Generative AI (GenAI), Retrieval-Augmented Generation (RAG), and agentic AI, is advancing faster than many organizations can adapt their governance, audit, cybersecurity, and executive oversight practices. This paper develops a proposed integrated AI governance prioritization architecture using a design-science research approach, supported by exploratory platform-risk analysis, a reproducible platform-risk dataset, a Monte Carlo robustness assessment, a framework coverage matrix, a Governance Priority Score (GPS)-based demonstration, and a public-document relevance assessment. The primary contribution is an integrated governance decision-support architecture that uses the Enterprise AI Platform Taxonomy (EAPT) to estimate platform burden, the Enterprise AI Risk Taxonomy (EART) to organize governance-risk exposure, the Enterprise AI Governance Maturity Model (EAGM) to represent organizational readiness, and the Integrated Agentic AI Governance Framework (IAGF) to identify agentic AI oversight requirements within a unified workflow. These components are operationally connected through GPS, which links platform burden, governancerisk gaps, organizational readiness, agentic runtime-control needs, and executive decision support. The proposed architecture draws upon NIST AI RMF, NIST AI 600-1, ISO/IEC 42001, COBIT, OWASP LLM Top 10, MITRE ATLAS, the EU AI Act, and related AI governance literature. A rubric-based analytical dataset covering 19 enterprise AI platforms evaluates each platform across eight subdimensions, with final platform-risk scores computed as the arithmetic mean of data access scope, operational autonomy, tool/API integration breadth, external connectivity, governance burden, cybersecurity exposure, adoption and shadow-AI risk, and supply-chain integrity. TThe expanded scoring method produces high rank stability relative to the original final-score dataset, with Spearman\u2019s \u03c1 = 0.996, and remains directionally stable under coding-uncertainty stress testing; these results are interpreted only as internal coding stability and robustness, not external validation. Public evidence from U.S. government agencies, universities, healthcare systems, and financial institutions is used to assess architecture relevance and observability, not to claim organizational effectiveness. The paper contributes a bounded design-science foundation for future inter-rater reliability testing, Delphi expert validation, organizational pilots, psychometric evaluation, and dashboard usability assessment.</p>",
+        "abstract": "<title>Abstract</title>\n                <p>Enterprise adoption of artificial intelligence (AI) systems, including Generative AI (GenAI), Retrieval-Augmented Generation (RAG), and agentic AI, is advancing faster than many organizations can adapt their governance, audit, cybersecurity, and executive oversight practices. This paper develops a proposed integrated AI governance prioritization architecture using a design-science research approach, supported by exploratory platform-risk analysis, a reproducible platform-risk dataset, a Monte Carlo robustness assessment, a framework coverage matrix, a Governance Priority Score (GPS)-based demonstration, and a public-document relevance assessment. The primary contribution is an integrated governance decision-support architecture that uses the Enterprise AI Platform Taxonomy (EAPT) to estimate platform burden, the Enterprise AI Risk Taxonomy (EART) to organize governance-risk exposure, the Enterprise AI Governance Maturity Model (EAGM) to represent organizational readiness, and the Integrated Agentic AI Governance Framework (IAGF) to identify agentic AI oversight requirements within a unified workflow. These components are operationally connected through GPS, which links platform burden, governancerisk gaps, organizational readiness, agentic runtime-control needs, and executive decision support. The proposed architecture draws upon NIST AI RMF, NIST AI 600-1, ISO/IEC 42001, COBIT, OWASP LLM Top 10, MITRE ATLAS, the EU AI Act, and related AI governance literature. A rubric-based analytical dataset covering 19 enterprise AI platforms evaluates each platform across eight subdimensions, with final platform-risk scores computed as the arithmetic mean of data access scope, operational autonomy, tool/API integration breadth, external connectivity, governance burden, cybersecurity exposure, adoption and shadow-AI risk, and supply-chain integrity. TThe expanded scoring method produces high rank stability relative to the original final-score dataset, with Spearman’s ρ = 0.996, and remains directionally stable under coding-uncertainty stress testing; these results are interpreted only as internal coding stability and robustness, not external validation. Public evidence from U.S. government agencies, universities, healthcare systems, and financial institutions is used to assess architecture relevance and observability, not to claim organizational effectiveness. The paper contributes a bounded design-science foundation for future inter-rater reliability testing, Delphi expert validation, organizational pilots, psychometric evaluation, and dashboard usability assessment.</p>",
         "DOI": "10.21203/rs.3.rs-10012178/v1",
         "type": "posted-content",
         "created": {
@@ -2490,7 +2490,7 @@
           "date-time": "2026-06-15T06:08:17Z",
           "timestamp": 1781503697000
         },
-        "score": 35.01165,
+        "score": 34.985672,
         "resource": {
           "primary": {
             "URL": "https://www.researchsquare.com/article/rs-10012178/v1"
@@ -2550,7 +2550,7 @@
             ]
           ]
         },
-        "abstract": "<jats:p>The article is devoted to the theoretical and methodological substantiation of the concept of intelligent automation of economic processes based on the integration of Retrieval-Augmented Generation (RAG), Large Language Models (LLM), Prompt Engineering, and Automatic Engineering technologies. The modern digital economy is moving from technical automation to cognitive automation, in which self-learning systems are emerging that can adapt to environmental changes, analyze the results of their own activities, and generate new economic solutions. RAG acts as a cognitive intermediary between generation and data retrieval, ensuring the factual reliability of analytical results. LLMs provide semantic interpretation of information and create conditions for natural-language scenario modeling. Prompt Engineering determines the quality of interaction between humans and the system by transforming users\u2019 analytical intentions into a formalized query structure. Particular attention is paid to Automatic Engineering as a meta-level of cognitive management that ensures automated prompt improvement, reconfiguration of generation parameters, development of decision metamodels, and formation of digital twins of management processes. A multilevel cognitive-engineering model of economic management is proposed, which includes strategic, cognitive-technical, self-learning, and reflexive levels. This architecture forms a closed cognitive cycle of \u201cgeneration \u2013 evaluation \u2013 optimization \u2013 updating,\u201d which ensures the system\u2019s capacity for reflexive self-learning and evolutionary development. The practical significance of the research lies in creating a methodological basis for implementing agentic AI solutions in strategic planning, risk forecasting, and enhancing the intellectual resilience of economic systems in the digital economy.\n\nKeywords: intelligent automation, Retrieval-Augmented Generation (RAG), Large Language Models (LLM), Prompt Engineering, Automatic Engineering, cognitive architecture, digital economy, strategic management, self-learning economy, artificial intelligence.</jats:p>",
+        "abstract": "<jats:p>The article is devoted to the theoretical and methodological substantiation of the concept of intelligent automation of economic processes based on the integration of Retrieval-Augmented Generation (RAG), Large Language Models (LLM), Prompt Engineering, and Automatic Engineering technologies. The modern digital economy is moving from technical automation to cognitive automation, in which self-learning systems are emerging that can adapt to environmental changes, analyze the results of their own activities, and generate new economic solutions. RAG acts as a cognitive intermediary between generation and data retrieval, ensuring the factual reliability of analytical results. LLMs provide semantic interpretation of information and create conditions for natural-language scenario modeling. Prompt Engineering determines the quality of interaction between humans and the system by transforming users’ analytical intentions into a formalized query structure. Particular attention is paid to Automatic Engineering as a meta-level of cognitive management that ensures automated prompt improvement, reconfiguration of generation parameters, development of decision metamodels, and formation of digital twins of management processes. A multilevel cognitive-engineering model of economic management is proposed, which includes strategic, cognitive-technical, self-learning, and reflexive levels. This architecture forms a closed cognitive cycle of “generation – evaluation – optimization – updating,” which ensures the system’s capacity for reflexive self-learning and evolutionary development. The practical significance of the research lies in creating a methodological basis for implementing agentic AI solutions in strategic planning, risk forecasting, and enhancing the intellectual resilience of economic systems in the digital economy.\n\nKeywords: intelligent automation, Retrieval-Augmented Generation (RAG), Large Language Models (LLM), Prompt Engineering, Automatic Engineering, cognitive architecture, digital economy, strategic management, self-learning economy, artificial intelligence.</jats:p>",
         "DOI": "10.36887/2415-8453-2026-3-2",
         "type": "journal-article",
         "created": {
@@ -2588,7 +2588,7 @@
                     "asserted-by": "publisher"
                   }
                 ],
-                "name": "North-Ukrainian Institute of the Private Joint Stock Company \u201cHigher Education Institution \u201cThe Interregional Academy of Personnel Management\u201d, Chernihiv, Ukraine"
+                "name": "North-Ukrainian Institute of the Private Joint Stock Company “Higher Education Institution “The Interregional Academy of Personnel Management”, Chernihiv, Ukraine"
               }
             ],
             "role": [
@@ -2643,13 +2643,13 @@
           {
             "key": "ref2",
             "doi-asserted-by": "publisher",
-            "unstructured": "Arefiev, S., Zhyhlei, I., Pereguda, Y., Kryvokulska, N. & Lushchyk, M. (2023) El uso de tecnolog\u00edas digitales para garantizar la seguridad ambiental en el contexto del desarrollo de una Econom\u00eda Verde [The use of digital technologies to ensure environmental safety in the context of the green economy development], Revista de la Universidad del Zulia, vol. 15, no. 42, pp. 353-369. https://doi.org/10.46925/rdluz.42.20.",
+            "unstructured": "Arefiev, S., Zhyhlei, I., Pereguda, Y., Kryvokulska, N. & Lushchyk, M. (2023) El uso de tecnologías digitales para garantizar la seguridad ambiental en el contexto del desarrollo de una Economía Verde [The use of digital technologies to ensure environmental safety in the context of the green economy development], Revista de la Universidad del Zulia, vol. 15, no. 42, pp. 353-369. https://doi.org/10.46925/rdluz.42.20.",
             "DOI": "10.46925//rdluz.42.20"
           },
           {
             "key": "ref3",
             "doi-asserted-by": "publisher",
-            "unstructured": "Chen, B., Zhang, Z., Langren\u00e9, N. & Zhu, S. (2025) Unleashing the potential of prompt engineering for large language models, Patterns, vol. 6, no. 6, art. 101260. https://doi.org/10.1016/j.patter.2025.101260.",
+            "unstructured": "Chen, B., Zhang, Z., Langrené, N. & Zhu, S. (2025) Unleashing the potential of prompt engineering for large language models, Patterns, vol. 6, no. 6, art. 101260. https://doi.org/10.1016/j.patter.2025.101260.",
             "DOI": "10.1016/j.patter.2025.101260"
           },
           {
@@ -2705,7 +2705,7 @@
           "Ukrainian Journal of Applied Economics and Technology"
         ],
         "original-title": [
-          "\u0406\u043d\u0442\u0435\u043b\u0435\u043a\u0442\u0443\u0430\u043b\u044c\u043d\u0430 \u0430\u0432\u0442\u043e\u043c\u0430\u0442\u0438\u0437\u0430\u0446\u0456\u044f \u0435\u043a\u043e\u043d\u043e\u043c\u0456\u0447\u043d\u0438\u0445 \u043f\u0440\u043e\u0446\u0435\u0441\u0456\u0432 \u043d\u0430 \u043e\u0441\u043d\u043e\u0432\u0456 retrieval-augmented generation \u0456 \u0432\u0435\u043b\u0438\u043a\u0438\u0445 \u043c\u043e\u0432\u043d\u0438\u0445 \u043c\u043e\u0434\u0435\u043b\u0435\u0439"
+          "Інтелектуальна автоматизація економічних процесів на основі retrieval-augmented generation і великих мовних моделей"
         ],
         "deposited": {
           "date-parts": [
@@ -2718,7 +2718,7 @@
           "date-time": "2026-09-04T08:34:52Z",
           "timestamp": 1788510892000
         },
-        "score": 34.856487,
+        "score": 34.85644,
         "resource": {
           "primary": {
             "URL": "https://ujae.org.ua/en/intelligent-automation-of-economic-processes-based-on-retrieval-augmented-generation-and-large-language-models/"
@@ -2803,7 +2803,7 @@
             ]
           ]
         },
-        "abstract": "<jats:title>Summary</jats:title>\n                  <jats:p>In high-risk industrial settings, leveraging large language models (LLMs) for automated accident analysis and generating safety reports has emerged as an efficient workflow. However, this approach is fundamentally constrained by the models\u2019 inherent knowledge limitations, frequently resulting in analyses that lack domain-specific understanding and regulatory alignment.</jats:p>\n                  <jats:p>To tackle this issue, we introduce SafeRAG, a multistage retrieval-augmented framework for safety report generation. Specifically, the framework uses an entity-centric approach that prompts the LLMs to internally generate domain-specific knowledge. Concurrently, it performs a hierarchical retrieval of external regulations relevant to the accident at topic, concept, and context levels. To obtain well-structured reports, we leverage prompt engineering, integrating internal and external knowledge. Furthermore, a domain-expert persona is also assigned to help LLMs analyze accidents from a specific perspective. To evaluate our approach, we construct a data set from 10,818 accident-description/report pairs collected from real-world industry reports. Experiments show that SafeRAG substantially outperforms baseline LLMs on metrics that include bidirectional encoder representations from transformers (BERTScore) and bidirectional auto-regressive transformers (BARTScore), demonstrating the effectiveness of our approach.</jats:p>",
+        "abstract": "<jats:title>Summary</jats:title>\n                  <jats:p>In high-risk industrial settings, leveraging large language models (LLMs) for automated accident analysis and generating safety reports has emerged as an efficient workflow. However, this approach is fundamentally constrained by the models’ inherent knowledge limitations, frequently resulting in analyses that lack domain-specific understanding and regulatory alignment.</jats:p>\n                  <jats:p>To tackle this issue, we introduce SafeRAG, a multistage retrieval-augmented framework for safety report generation. Specifically, the framework uses an entity-centric approach that prompts the LLMs to internally generate domain-specific knowledge. Concurrently, it performs a hierarchical retrieval of external regulations relevant to the accident at topic, concept, and context levels. To obtain well-structured reports, we leverage prompt engineering, integrating internal and external knowledge. Furthermore, a domain-expert persona is also assigned to help LLMs analyze accidents from a specific perspective. To evaluate our approach, we construct a data set from 10,818 accident-description/report pairs collected from real-world industry reports. Experiments show that SafeRAG substantially outperforms baseline LLMs on metrics that include bidirectional encoder representations from transformers (BERTScore) and bidirectional auto-regressive transformers (BARTScore), demonstrating the effectiveness of our approach.</jats:p>",
         "DOI": "10.2118/234689-pa",
         "type": "journal-article",
         "created": {
@@ -2984,7 +2984,7 @@
             "article-title": "METEOR: An Automatic Metric for MT Evaluation with High Levels of Correlation with Human Judgments",
             "author": "Lavie",
             "year": "2007",
-            "journal-title": "StatMT \u201907: Proceedings of the Second Workshop on Statistical Machine Translation"
+            "journal-title": "StatMT ’07: Proceedings of the Second Workshop on Statistical Machine Translation"
           },
           {
             "key": "2026080510174680500_R16",
@@ -3071,7 +3071,7 @@
             "article-title": "BLEU: A Method for Automatic Evaluation of Machine Translation",
             "author": "Papineni",
             "year": "2001",
-            "journal-title": "ACL \u201902: Proceedings of the 40th Annual Meeting on Association for Computational Linguistics"
+            "journal-title": "ACL ’02: Proceedings of the 40th Annual Meeting on Association for Computational Linguistics"
           },
           {
             "key": "#cr-split#-2026080510174680500_R21.1",
@@ -3196,7 +3196,7 @@
             "article-title": "SELF-DISCOVER: Large Language Models SELF-Compose Reasoning Structures",
             "author": "Zhou",
             "year": "2024",
-            "journal-title": "NIPS \u201924: Proceedings of the 38th International Conference on Neural Information Processing Systems"
+            "journal-title": "NIPS ’24: Proceedings of the 38th International Conference on Neural Information Processing Systems"
           }
         ],
         "container-title": [
@@ -3228,7 +3228,7 @@
           "date-time": "2026-08-05T14:18:01Z",
           "timestamp": 1785939481000
         },
-        "score": 34.84622,
+        "score": 34.758938,
         "resource": {
           "primary": {
             "URL": "https://onepetro.org/SJ/article/doi/10.2118/234689-PA/801839/SafeRAG-A-Large-Language-Model-Based-Multistage"
@@ -3371,7 +3371,7 @@
           "date-time": "2026-08-15T12:19:26Z",
           "timestamp": 1786796366000
         },
-        "score": 34.49456,
+        "score": 34.49933,
         "resource": {
           "primary": {
             "URL": "https://www.ijfmr.com/research-paper.php?id=85777"
@@ -3584,7 +3584,7 @@
           "date-time": "2026-07-04T20:37:12Z",
           "timestamp": 1783197432000
         },
-        "score": 34.443905,
+        "score": 34.44412,
         "resource": {
           "primary": {
             "URL": "https://www.ejournal.ummuba.ac.id/index.php/JUPTIK/article/view/4318"
@@ -3753,7 +3753,7 @@
           "date-time": "2026-07-10T14:51:37Z",
           "timestamp": 1783695097000
         },
-        "score": 34.381485,
+        "score": 34.441635,
         "resource": {
           "primary": {
             "URL": "https://hdl.handle.net/11681/50309"
@@ -3853,7 +3853,7 @@
         "short-container-title": [
           "J Digit Imaging. Inform. med."
         ],
-        "abstract": "<jats:title>Abstract</jats:title>\n                  <jats:p>\n                    Diagnosing jawbone lesions in oral and maxillofacial radiology remains challenging due to overlapping radiological features and the need for integrated clinical reasoning. This study aimed to develop and validate JADE-Plus, a novel multimodal, agent-controlled retrieval-augmented generation (RAG) framework for diagnostic decision support in jawbone lesion assessment. JADE-Plus was implemented as a cloud-based, tablet-optimized system integrating a vision-language model (VLM) for panoramic radiograph analysis, a knowledge-grounded RAG module, and an agentic verification loop for diagnostic fusion and re-ranking. The system was evaluated using 40 representative jawbone lesion cases and compared with JADE, GPT-5.4, GPT-5.4 VLM, and ORAD. Performance was assessed using Top-1 and Top-3 accuracy, ablation and statistical analyses, intra-model stability, and response time. JADE-Plus achieved the highest diagnostic performance, with a Top-1 accuracy of 90% (36/40; 95% CI 76\u201397%) and a Top-3 accuracy of 100%, with no missed diagnoses. Cochran\u2019s\n                    <jats:italic>Q</jats:italic>\n                    test demonstrated significant differences among models for both Top-3 correctness (\n                    <jats:italic>Q</jats:italic>\n                    \u2009=\u200925.66,\n                    <jats:italic>p</jats:italic>\n                    \u2009&lt;\u20090.001) and Top-1 correctness (\n                    <jats:italic>Q</jats:italic>\n                    \u2009=\u200927.55,\n                    <jats:italic>p</jats:italic>\n                    \u2009&lt;\u20090.001). Post-hoc McNemar tests with the Benjamini\u2013Hochberg correction showed that JADE-Plus significantly outperformed other models, particularly under the stricter Top-1 evaluation. Ablation analysis showed that the agentic verification stage improved Top-1 and Top-3 accuracy by 15 and 8 percentage points, respectively. JADE-Plus achieved the highest reproducibility (mean Jaccard similarity 0.97\u2009\u00b1\u20090.12) while maintaining a mean response time of 33\u2009\u00b1\u20091.5\u00a0s per case. JADE-Plus demonstrated superior diagnostic accuracy, stability, and reproducibility compared with baseline systems, supporting multimodal agentic RAG frameworks for jawbone lesion diagnosis.\n                  </jats:p>",
+        "abstract": "<jats:title>Abstract</jats:title>\n                  <jats:p>\n                    Diagnosing jawbone lesions in oral and maxillofacial radiology remains challenging due to overlapping radiological features and the need for integrated clinical reasoning. This study aimed to develop and validate JADE-Plus, a novel multimodal, agent-controlled retrieval-augmented generation (RAG) framework for diagnostic decision support in jawbone lesion assessment. JADE-Plus was implemented as a cloud-based, tablet-optimized system integrating a vision-language model (VLM) for panoramic radiograph analysis, a knowledge-grounded RAG module, and an agentic verification loop for diagnostic fusion and re-ranking. The system was evaluated using 40 representative jawbone lesion cases and compared with JADE, GPT-5.4, GPT-5.4 VLM, and ORAD. Performance was assessed using Top-1 and Top-3 accuracy, ablation and statistical analyses, intra-model stability, and response time. JADE-Plus achieved the highest diagnostic performance, with a Top-1 accuracy of 90% (36/40; 95% CI 76–97%) and a Top-3 accuracy of 100%, with no missed diagnoses. Cochran’s\n                    <jats:italic>Q</jats:italic>\n                    test demonstrated significant differences among models for both Top-3 correctness (\n                    <jats:italic>Q</jats:italic>\n                     = 25.66,\n                    <jats:italic>p</jats:italic>\n                     &lt; 0.001) and Top-1 correctness (\n                    <jats:italic>Q</jats:italic>\n                     = 27.55,\n                    <jats:italic>p</jats:italic>\n                     &lt; 0.001). Post-hoc McNemar tests with the Benjamini–Hochberg correction showed that JADE-Plus significantly outperformed other models, particularly under the stricter Top-1 evaluation. Ablation analysis showed that the agentic verification stage improved Top-1 and Top-3 accuracy by 15 and 8 percentage points, respectively. JADE-Plus achieved the highest reproducibility (mean Jaccard similarity 0.97 ± 0.12) while maintaining a mean response time of 33 ± 1.5 s per case. JADE-Plus demonstrated superior diagnostic accuracy, stability, and reproducibility compared with baseline systems, supporting multimodal agentic RAG frameworks for jawbone lesion diagnosis.\n                  </jats:p>",
         "DOI": "10.1007/s10278-026-02086-9",
         "type": "journal-article",
         "created": {
@@ -3960,13 +3960,13 @@
           {
             "key": "2086_CR1",
             "doi-asserted-by": "publisher",
-            "unstructured": "Kaplan TT, Akyol GE. The role of large language models in dental diagnosis, decision-making, and communication: A systematic review. Jpn Dent Sci Rev 2026;62:57\u201367. https://doi.org/10.1016/j.jdsr.2026.01.002.",
+            "unstructured": "Kaplan TT, Akyol GE. The role of large language models in dental diagnosis, decision-making, and communication: A systematic review. Jpn Dent Sci Rev 2026;62:57–67. https://doi.org/10.1016/j.jdsr.2026.01.002.",
             "DOI": "10.1016/j.jdsr.2026.01.002"
           },
           {
             "key": "2086_CR2",
             "doi-asserted-by": "publisher",
-            "unstructured": "Liu Z, Nalley A, Hao J, et al. The performance of large language models in dentomaxillofacial radiology: a systematic review. Dentomaxillofac Radiol 2025;54:613\u201331. https://doi.org/10.1093/dmfr/twaf060.",
+            "unstructured": "Liu Z, Nalley A, Hao J, et al. The performance of large language models in dentomaxillofacial radiology: a systematic review. Dentomaxillofac Radiol 2025;54:613–31. https://doi.org/10.1093/dmfr/twaf060.",
             "DOI": "10.1093/dmfr/twaf060"
           },
           {
@@ -3978,7 +3978,7 @@
           {
             "key": "2086_CR4",
             "doi-asserted-by": "publisher",
-            "unstructured": "de Morais EF, de Souto Medeiros MR, Moreira DGL, et al. Artificial Intelligence chatbots in oral pathology: a scoping review of applications, accuracy, and limitations. Eur Arch Otorhinolaryngol 2026;283:2117\u201326. https://doi.org/10.1007/s00405-025-09810-1.",
+            "unstructured": "de Morais EF, de Souto Medeiros MR, Moreira DGL, et al. Artificial Intelligence chatbots in oral pathology: a scoping review of applications, accuracy, and limitations. Eur Arch Otorhinolaryngol 2026;283:2117–26. https://doi.org/10.1007/s00405-025-09810-1.",
             "DOI": "10.1007/s00405-025-09810-1"
           },
           {
@@ -3990,7 +3990,7 @@
           {
             "key": "2086_CR6",
             "doi-asserted-by": "publisher",
-            "unstructured": "Cuevas-Nunez M, Silberberg VIA, Arregui M, et al. Diagnostic performance of ChatGPT-4.0 in histopathological description analysis of oral and maxillofacial lesions: a comparative study with pathologists. Oral Surg Oral Med Oral Pathol Oral Radiol 2025;139:453\u201361. https://doi.org/10.1016/j.oooo.2024.11.087.",
+            "unstructured": "Cuevas-Nunez M, Silberberg VIA, Arregui M, et al. Diagnostic performance of ChatGPT-4.0 in histopathological description analysis of oral and maxillofacial lesions: a comparative study with pathologists. Oral Surg Oral Med Oral Pathol Oral Radiol 2025;139:453–61. https://doi.org/10.1016/j.oooo.2024.11.087.",
             "DOI": "10.1016/j.oooo.2024.11.087"
           },
           {
@@ -4026,7 +4026,7 @@
           {
             "key": "2086_CR12",
             "doi-asserted-by": "publisher",
-            "unstructured": "Singhal K, Tu T, Gottweis J, et al. Toward expert-level medical question answering with large language models. Nat Med 2025;31:943\u201350. https://doi.org/10.1038/s41591-024-03423-7.",
+            "unstructured": "Singhal K, Tu T, Gottweis J, et al. Toward expert-level medical question answering with large language models. Nat Med 2025;31:943–50. https://doi.org/10.1038/s41591-024-03423-7.",
             "DOI": "10.1038/s41591-024-03423-7"
           },
           {
@@ -4038,7 +4038,7 @@
           {
             "key": "2086_CR14",
             "doi-asserted-by": "publisher",
-            "unstructured": "Zhang K, Zhou R, Adhikarla E, et al. A generalist vision\u2013language foundation model for diverse biomedical tasks. Nat Med 2024;30:3129\u201341. https://doi.org/10.1038/s41591-024-03185-2.",
+            "unstructured": "Zhang K, Zhou R, Adhikarla E, et al. A generalist vision–language foundation model for diverse biomedical tasks. Nat Med 2024;30:3129–41. https://doi.org/10.1038/s41591-024-03185-2.",
             "DOI": "10.1038/s41591-024-03185-2"
           },
           {
@@ -4064,7 +4064,7 @@
             "volume": "17",
             "author": "S Baseri Saadi",
             "year": "2022",
-            "unstructured": "Baseri Saadi S, Moreno-Rabi\u00e9 C, van den Wyngaert T, et al. Convolutional neural network for automated classification of osteonecrosis and related mandibular trabecular patterns. Bone Rep 2022;17:101632. https://doi.org/10.1016/J.BONR.2022.101632.",
+            "unstructured": "Baseri Saadi S, Moreno-Rabié C, van den Wyngaert T, et al. Convolutional neural network for automated classification of osteonecrosis and related mandibular trabecular patterns. Bone Rep 2022;17:101632. https://doi.org/10.1016/J.BONR.2022.101632.",
             "journal-title": "Bone Rep"
           },
           {
@@ -4102,7 +4102,7 @@
             "volume": "67",
             "author": "M Klesel",
             "year": "2025",
-            "unstructured": "Klesel M, Wittmann HF. Retrieval-Augmented Generation (RAG). Bus Inf Syst Eng 2025;67:551\u201361. https://doi.org/10.1007/s12599-025-00945-3.",
+            "unstructured": "Klesel M, Wittmann HF. Retrieval-Augmented Generation (RAG). Bus Inf Syst Eng 2025;67:551–61. https://doi.org/10.1007/s12599-025-00945-3.",
             "journal-title": "Bus Inf Syst Eng"
           },
           {
@@ -4119,7 +4119,7 @@
             "volume": "18",
             "author": "SC White",
             "year": "1989",
-            "unstructured": "White SC. Computer-aided differential diagnosis of oral radiographic lesions. Dentomaxillofac Radiol 1989;18:53\u20139. https://doi.org/10.1259/DMFR.18.2.2699592.",
+            "unstructured": "White SC. Computer-aided differential diagnosis of oral radiographic lesions. Dentomaxillofac Radiol 1989;18:53–9. https://doi.org/10.1259/DMFR.18.2.2699592.",
             "journal-title": "Dentomaxillofac Radiol"
           },
           {
@@ -4145,12 +4145,12 @@
           {
             "key": "2086_CR27",
             "doi-asserted-by": "publisher",
-            "unstructured": "Robertson S. BM25 and all that - a look back. SIGIR 2025 - Proceedings of the 48th International ACM SIGIR Conference on Research and Development in Information Retrieval 2025:5\u20138. https://doi.org/10.1145/3726302.3729905.",
+            "unstructured": "Robertson S. BM25 and all that - a look back. SIGIR 2025 - Proceedings of the 48th International ACM SIGIR Conference on Research and Development in Information Retrieval 2025:5–8. https://doi.org/10.1145/3726302.3729905.",
             "DOI": "10.1145/3726302.3729905"
           },
           {
             "key": "2086_CR28",
-            "unstructured": "Gnepp DR. Gnepp\u2019s Diagnostic Surgical Pathology of the Head and Neck. 3rd ed. Elsevier; 2020."
+            "unstructured": "Gnepp DR. Gnepp’s Diagnostic Surgical Pathology of the Head and Neck. 3rd ed. Elsevier; 2020."
           },
           {
             "key": "2086_CR29",
@@ -4178,7 +4178,7 @@
           },
           {
             "key": "2086_CR34",
-            "unstructured": "Qdrant. Qdrant \u2013 Vector Database. https://qdrant.tech/. Accessed 17 November 2025."
+            "unstructured": "Qdrant. Qdrant – Vector Database. https://qdrant.tech/. Accessed 17 November 2025."
           },
           {
             "key": "2086_CR35",
@@ -4195,12 +4195,12 @@
           {
             "key": "2086_CR38",
             "doi-asserted-by": "publisher",
-            "unstructured": "Seabold S, Perktold J. Statsmodels: Econometric and Statistical Modeling with Python, Austin, Texas: 2010, p. 92\u20136. https://doi.org/10.25080/Majora-92bf1922-011.",
+            "unstructured": "Seabold S, Perktold J. Statsmodels: Econometric and Statistical Modeling with Python, Austin, Texas: 2010, p. 92–6. https://doi.org/10.25080/Majora-92bf1922-011.",
             "DOI": "10.25080/Majora-92bf1922-011"
           },
           {
             "key": "2086_CR39",
-            "unstructured": "Diagnocat. AI diagnostic dental solutions \u2013 leading AI dental software for accurate diagnostics. https://diagnocat.com/en. Accessed 27 March 2026."
+            "unstructured": "Diagnocat. AI diagnostic dental solutions – leading AI dental software for accurate diagnostics. https://diagnocat.com/en. Accessed 27 March 2026."
           },
           {
             "key": "2086_CR40",
@@ -4212,7 +4212,7 @@
           },
           {
             "key": "2086_CR42",
-            "unstructured": "Align X-Ray Insights. AI dental diagnostics \u2013 start your free trial today. https://www.alignxrayinsights.com/. Accessed 27 March 2026."
+            "unstructured": "Align X-Ray Insights. AI dental diagnostics – start your free trial today. https://www.alignxrayinsights.com/. Accessed 27 March 2026."
           },
           {
             "key": "2086_CR43",
@@ -4224,9 +4224,9 @@
             "first-page": "95",
             "DOI": "10.7546/CRABS.2026.01.12",
             "volume": "79",
-            "author": "E \u00c7amur",
+            "author": "E Çamur",
             "year": "2026",
-            "unstructured": "\u00c7amur E, Cesur T, G\u00fcne\u015f Y, et al. The Performance of Large Language Models in Bone Tumour Imaging: Comparative Analysis with Radiologists Using Text and Image-based Evaluation. Proceedings of the Bulgarian Academy of Sciences 2026;79:95\u2013102. https://doi.org/10.7546/CRABS.2026.01.12.",
+            "unstructured": "Çamur E, Cesur T, Güneş Y, et al. The Performance of Large Language Models in Bone Tumour Imaging: Comparative Analysis with Radiologists Using Text and Image-based Evaluation. Proceedings of the Bulgarian Academy of Sciences 2026;79:95–102. https://doi.org/10.7546/CRABS.2026.01.12.",
             "journal-title": "Proceedings of the Bulgarian Academy of Sciences"
           },
           {
@@ -4242,7 +4242,7 @@
           {
             "key": "2086_CR46",
             "doi-asserted-by": "publisher",
-            "unstructured": "Xiong YT, Lian WJ, Sun YN, et al. Exploring GPT-4o\u2019s multimodal reasoning capabilities with panoramic radiograph: the role of prompt engineering. Clin Oral Investig 2025;29:405-. https://doi.org/10.1007/s00784-025-06498-9.",
+            "unstructured": "Xiong YT, Lian WJ, Sun YN, et al. Exploring GPT-4o’s multimodal reasoning capabilities with panoramic radiograph: the role of prompt engineering. Clin Oral Investig 2025;29:405-. https://doi.org/10.1007/s00784-025-06498-9.",
             "DOI": "10.1007/s00784-025-06498-9"
           },
           {
@@ -4259,7 +4259,7 @@
             "volume": "28",
             "author": "P Kim",
             "year": "2024",
-            "unstructured": "Kim P, Seo B, De Silva H. Concordance of clinician, Chat-GPT4, and ORAD diagnoses against histopathology in Odontogenic Keratocysts and tumours: a 15-Year New Zealand retrospective study. Oral Maxillofac Surg 2024;28:1557\u201369. https://doi.org/10.1007/s10006-024-01284-5.",
+            "unstructured": "Kim P, Seo B, De Silva H. Concordance of clinician, Chat-GPT4, and ORAD diagnoses against histopathology in Odontogenic Keratocysts and tumours: a 15-Year New Zealand retrospective study. Oral Maxillofac Surg 2024;28:1557–69. https://doi.org/10.1007/s10006-024-01284-5.",
             "journal-title": "Oral Maxillofac Surg"
           },
           {
@@ -4281,7 +4281,7 @@
             "volume": "55",
             "author": "J Ver Berne",
             "year": "2026",
-            "unstructured": "Ver Berne J, Ton That M, Jacobs R. Performance and clinical applicability of AI models for jawbone lesion classification: a systematic review with meta-analysis and introduction of a clinical interpretation score. Dentomaxillofac Radiol 2026;55:130\u201343. https://doi.org/10.1093/dmfr/twaf086.",
+            "unstructured": "Ver Berne J, Ton That M, Jacobs R. Performance and clinical applicability of AI models for jawbone lesion classification: a systematic review with meta-analysis and introduction of a clinical interpretation score. Dentomaxillofac Radiol 2026;55:130–43. https://doi.org/10.1093/dmfr/twaf086.",
             "journal-title": "Dentomaxillofac Radiol"
           },
           {
@@ -4326,7 +4326,7 @@
           "date-time": "2026-07-13T14:44:27Z",
           "timestamp": 1783953867000
         },
-        "score": 34.313755,
+        "score": 34.393463,
         "resource": {
           "primary": {
             "URL": "https://link.springer.com/10.1007/s10278-026-02086-9"
@@ -4423,7 +4423,7 @@
             }
           },
           {
-            "value": "The manuscript does not contain any individual person\u2019s data in any form.",
+            "value": "The manuscript does not contain any individual person’s data in any form.",
             "order": 3,
             "name": "Ethics",
             "group": {
@@ -4583,7 +4583,7 @@
           "date-time": "2026-08-26T06:36:23Z",
           "timestamp": 1787726183000
         },
-        "score": 34.162884,
+        "score": 34.163464,
         "resource": {
           "primary": {
             "URL": "https://www.researchsquare.com/article/rs-10423755/v1"
@@ -4698,7 +4698,7 @@
           "date-time": "2026-08-11T12:20:32Z",
           "timestamp": 1786450832000
         },
-        "score": 34.078762,
+        "score": 34.078968,
         "resource": {
           "primary": {
             "URL": "https://ajdsa-journal.org/index.php/ajdsa/article/view/80"
@@ -4784,7 +4784,7 @@
             ]
           ]
         },
-        "abstract": "<jats:title>Abstract</jats:title>\n                  <jats:sec>\n                    <jats:title>Introduction</jats:title>\n                    <jats:p>While Large Language Models (LLMs) offer generative capabilities, generic models often lack domain-specific grounding, leading to hallucinations in high-stakes contexts. However, LLMs can serve as clinical decision support tools if augmented with specific domain data. This study evaluates the utility of Retrieval-Augmented Generation (RAG) applied to open-source LLMs, utilizing a curated knowledge base of authoritative sleep medicine textbooks, to quantify improvement in performance.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Methods</jats:title>\n                    <jats:p>We evaluated four open-source models\u2014Llama-70B, Llama-8B, Qwen-14B, and Qwen-235B, linked to a RAG system indexing five standard textbooks, including ICSD-3 TR. Models were tested on sleep board\u2013style MCQs and clinical vignettes diagnostic accuracy. Performance was assessed across nine configurations derived from three factors: RAG pipeline complexity (Plain vs. Complicated), textbook preprocessing (Uncleaned vs. Cleaned/TOC-aligned), and retriever type (Dense-only vs. Hybrid). Metrics included MCQ Accuracy and the rates at which the correct diagnosis appeared as the top result or within the top 5 differential diagnosis lists for vignettes.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Results</jats:title>\n                    <jats:p>RAG consistently outperformed the no-RAG baseline, yielding absolute performance gains of 5.6%\u201310.7% for MCQs and 8.1%\u201310.2% for the top diagnosis in cases across all models. For MCQs, Qwen-235B achieved the highest accuracy of 87.3% (vs. 81.7% baseline) using the Plain RAG configuration with Cleaned (TOC-aligned) Hybrid retrieval. Llama-70B followed with 83.6% in the same configuration. For case vignettes, Qwen-235B achieved a correct top diagnosis rate of 66.3% and a correct diagnosis rate within the top 5 differential diagnosis lists of 90.8% using Cleaned Hybrid retrieval configurations. Hybrid retrieval (Dense + Sparse) consistently surpassed Dense-only methods. Notably, while larger models benefited from Cleaned text, smaller models (e.g., Qwen-14B) achieved higher top diagnosis rates with Uncleaned text (57.1% vs. 51.0%), suggesting a dependency on redundant context in lower-parameter settings.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Conclusion</jats:title>\n                    <jats:p>RAG significantly enhances knowledge performance of open-source LLMs in sleep medicine. Hybrid retrieval and curated, TOC-aligned knowledge bases yield optimal results for large models, whereas smaller models benefit from the redundancy of uncleaned text. These findings suggest that RAG systems can augment LLMs in domain specific knowledge for clinical decision support.</jats:p>\n                    <jats:p>Support (if any)\u2009</jats:p>\n                  </jats:sec>",
+        "abstract": "<jats:title>Abstract</jats:title>\n                  <jats:sec>\n                    <jats:title>Introduction</jats:title>\n                    <jats:p>While Large Language Models (LLMs) offer generative capabilities, generic models often lack domain-specific grounding, leading to hallucinations in high-stakes contexts. However, LLMs can serve as clinical decision support tools if augmented with specific domain data. This study evaluates the utility of Retrieval-Augmented Generation (RAG) applied to open-source LLMs, utilizing a curated knowledge base of authoritative sleep medicine textbooks, to quantify improvement in performance.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Methods</jats:title>\n                    <jats:p>We evaluated four open-source models—Llama-70B, Llama-8B, Qwen-14B, and Qwen-235B, linked to a RAG system indexing five standard textbooks, including ICSD-3 TR. Models were tested on sleep board–style MCQs and clinical vignettes diagnostic accuracy. Performance was assessed across nine configurations derived from three factors: RAG pipeline complexity (Plain vs. Complicated), textbook preprocessing (Uncleaned vs. Cleaned/TOC-aligned), and retriever type (Dense-only vs. Hybrid). Metrics included MCQ Accuracy and the rates at which the correct diagnosis appeared as the top result or within the top 5 differential diagnosis lists for vignettes.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Results</jats:title>\n                    <jats:p>RAG consistently outperformed the no-RAG baseline, yielding absolute performance gains of 5.6%–10.7% for MCQs and 8.1%–10.2% for the top diagnosis in cases across all models. For MCQs, Qwen-235B achieved the highest accuracy of 87.3% (vs. 81.7% baseline) using the Plain RAG configuration with Cleaned (TOC-aligned) Hybrid retrieval. Llama-70B followed with 83.6% in the same configuration. For case vignettes, Qwen-235B achieved a correct top diagnosis rate of 66.3% and a correct diagnosis rate within the top 5 differential diagnosis lists of 90.8% using Cleaned Hybrid retrieval configurations. Hybrid retrieval (Dense + Sparse) consistently surpassed Dense-only methods. Notably, while larger models benefited from Cleaned text, smaller models (e.g., Qwen-14B) achieved higher top diagnosis rates with Uncleaned text (57.1% vs. 51.0%), suggesting a dependency on redundant context in lower-parameter settings.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Conclusion</jats:title>\n                    <jats:p>RAG significantly enhances knowledge performance of open-source LLMs in sleep medicine. Hybrid retrieval and curated, TOC-aligned knowledge bases yield optimal results for large models, whereas smaller models benefit from the redundancy of uncleaned text. These findings suggest that RAG systems can augment LLMs in domain specific knowledge for clinical decision support.</jats:p>\n                    <jats:p>Support (if any) </jats:p>\n                  </jats:sec>",
         "DOI": "10.1093/sleep/zsag091.0346",
         "type": "journal-article",
         "created": {
@@ -4959,7 +4959,7 @@
           "date-time": "2026-05-09T02:39:59Z",
           "timestamp": 1778294399000
         },
-        "score": 34.068314,
+        "score": 34.068188,
         "resource": {
           "primary": {
             "URL": "https://academic.oup.com/sleep/article/49/Supplement_1/A153/8673444"
@@ -5068,7 +5068,7 @@
         "short-container-title": [
           "JuTISI"
         ],
-        "abstract": "<jats:p>Keterbukaan akses informasi publik diatur dalam Undang-Undang Nomor 14 Tahun 2008 tentang Keterbukaan Informasi Publik sebagai elemen utama untuk mewujudkan transparansi dan tata kelola pemerintahan yang baik. Di Universitas Lampung, Pejabat Pengelola Informasi dan Dokumentasi (PPID) menyediakan berbagai data publik melalui website resminya. Namun, pengguna sering mengalami kesulitan dalam menemukan informasi spesifik akibat tersebarnya dokumenserta keterbatasan fitur pencarian. Untuk mengatasi permasalahan tersebut, dikembangkan chatbot Telegram berbasis kecerdasan buatan menggunakan Large Language Model (LLM) Qwen2.5 VL 72B Instruct yang terintegrasi dengan arsitektur Retrieval Augmented Generation (RAG). Data diambil dari website PPID Universitas Lampung yang selanjutnya disusun menjadi dataset terstruktur sebanyak 375 pasangan pertanyaan\u2013jawaban yang dikurasi dari 47 entri informasi publik. Data tersebut diproses melalui tahap tokenisasi, embedding, serta indexing menggunakan vector database FAISS untuk mendukung pencariansemantik. Evaluasi dilakukan dengan metrik RAGAS (faithfulness, answer relevance, dan context recall) dengan ambang batas minimal 0,8, serta perbandingan performa dengan LLM murni. Hasil pengujian menunjukkan bahwa sistem berhasilmelampaui ambang batas RAGAS dengan rata-rata latensi respons yang sangat rendah yaitu 0,69 detik, serta memiliki akurasi lebih tinggi dibandingkan LLM murni dengan pengurangan signifikan terhadap halusinasi jawaban. Uji kegunaan menggunakan Chatbot Usability Questionnaire (CUQ) menghasilkan skor rata-rata 90,62 yang mengindikasikan pengalaman pengguna yang sangat baik. Penelitian ini menyimpulkan bahwa integrasi LLM dan RAG pada chatbot efektif meningkatkan akurasi, relevansi, dan kemudahan akses informasi publik secara real-time.</jats:p>",
+        "abstract": "<jats:p>Keterbukaan akses informasi publik diatur dalam Undang-Undang Nomor 14 Tahun 2008 tentang Keterbukaan Informasi Publik sebagai elemen utama untuk mewujudkan transparansi dan tata kelola pemerintahan yang baik. Di Universitas Lampung, Pejabat Pengelola Informasi dan Dokumentasi (PPID) menyediakan berbagai data publik melalui website resminya. Namun, pengguna sering mengalami kesulitan dalam menemukan informasi spesifik akibat tersebarnya dokumenserta keterbatasan fitur pencarian. Untuk mengatasi permasalahan tersebut, dikembangkan chatbot Telegram berbasis kecerdasan buatan menggunakan Large Language Model (LLM) Qwen2.5 VL 72B Instruct yang terintegrasi dengan arsitektur Retrieval Augmented Generation (RAG). Data diambil dari website PPID Universitas Lampung yang selanjutnya disusun menjadi dataset terstruktur sebanyak 375 pasangan pertanyaan–jawaban yang dikurasi dari 47 entri informasi publik. Data tersebut diproses melalui tahap tokenisasi, embedding, serta indexing menggunakan vector database FAISS untuk mendukung pencariansemantik. Evaluasi dilakukan dengan metrik RAGAS (faithfulness, answer relevance, dan context recall) dengan ambang batas minimal 0,8, serta perbandingan performa dengan LLM murni. Hasil pengujian menunjukkan bahwa sistem berhasilmelampaui ambang batas RAGAS dengan rata-rata latensi respons yang sangat rendah yaitu 0,69 detik, serta memiliki akurasi lebih tinggi dibandingkan LLM murni dengan pengurangan signifikan terhadap halusinasi jawaban. Uji kegunaan menggunakan Chatbot Usability Questionnaire (CUQ) menghasilkan skor rata-rata 90,62 yang mengindikasikan pengalaman pengguna yang sangat baik. Penelitian ini menyimpulkan bahwa integrasi LLM dan RAG pada chatbot efektif meningkatkan akurasi, relevansi, dan kemudahan akses informasi publik secara real-time.</jats:p>",
         "DOI": "10.28932/jutisi.v12i2.13099",
         "type": "journal-article",
         "created": {
@@ -5178,7 +5178,7 @@
           "date-time": "2026-09-02T06:41:33Z",
           "timestamp": 1788331293000
         },
-        "score": 34.026215,
+        "score": 34.025913,
         "resource": {
           "primary": {
             "URL": "https://journal.maranatha.edu/index.php/jutisi/article/view/13099"
@@ -5372,7 +5372,7 @@
           "date-time": "2026-08-11T06:13:06Z",
           "timestamp": 1786428786000
         },
-        "score": 33.904545,
+        "score": 33.879974,
         "resource": {
           "primary": {
             "URL": "https://www.researchsquare.com/article/rs-10178277/v1"
@@ -5526,7 +5526,7 @@
           "date-time": "2026-08-27T00:42:04Z",
           "timestamp": 1787791324000
         },
-        "score": 33.832417,
+        "score": 33.840126,
         "resource": {
           "primary": {
             "URL": "https://www.preprints.org/manuscript/202608.1849/v1"

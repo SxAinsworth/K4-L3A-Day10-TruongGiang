@@ -1,11 +1,19 @@
 from __future__ import annotations
 
+<<<<<<< HEAD
 import math
 from pathlib import Path
+=======
+from datetime import datetime, timedelta
+from core.compat import UTC
+from pathlib import Path
+from typing import Any
+>>>>>>> a42a52f (feat: complete Day 10 data pipeline, observability and repair flow)
 
 import pandas as pd
 
 from core.utils import write_json
+<<<<<<< HEAD
 
 
 NOISE = "zxqv_@@@_CORRUPTED_VECTOR_NOISE_9f8e7d_###_zxqv"
@@ -25,17 +33,20 @@ def _rebuild_embedding_text(row: pd.Series) -> str:
 
 def corrupt_clean_dataframe(df: pd.DataFrame, output_log_path) -> pd.DataFrame:
     """Inject six deterministic data-corruption scenarios and write an audit log.
+=======
 
-    Pseudo-code:
-    1. Drop mot so latest records.
-    2. Blank summary o mot so dong.
-    3. Inject noise vao text.
-    4. Lam title bi truncate.
-    5. Lam published date cu di.
-    6. Add duplicate rows.
-    7. Rebuild `text_for_embedding`.
-    8. Ghi corruption log vao output_log_path.
+NOISE = "!@#$% RANDOM NOISE CORRUPTION gibberish_token_xyz"
+>>>>>>> a42a52f (feat: complete Day 10 data pipeline, observability and repair flow)
+
+
+def corrupt_clean_dataframe(df: pd.DataFrame, output_log_path: Path | str) -> pd.DataFrame:
+    """Apply six deterministic, observable corruption scenarios.
+
+    The returned frame has the same row count as the input: three newest rows
+    are removed, then three existing rows are appended as duplicates. All
+    changes are deterministic to make the corruption experiment reproducible.
     """
+<<<<<<< HEAD
     required = {"paper_id", "title", "summary", "published", "age_days", "text_for_embedding"}
     missing = sorted(required.difference(df.columns))
     if missing:
@@ -145,3 +156,87 @@ def corrupt_clean_dataframe(df: pd.DataFrame, output_log_path) -> pd.DataFrame:
     }
     write_json(Path(output_log_path), log)
     return corrupted.reset_index(drop=True)
+=======
+    if not isinstance(df, pd.DataFrame):
+        raise TypeError("df must be a pandas DataFrame")
+    required = {"paper_id", "title", "summary", "published", "text_for_embedding"}
+    missing = required - set(df.columns)
+    if missing:
+        raise ValueError(f"Missing corruption columns: {sorted(missing)}")
+    original_count = len(df)
+    corrupted = df.copy(deep=True).reset_index(drop=True)
+    scenarios: list[dict[str, Any]] = []
+
+    def record(name: str, indices: list[Any], details: str) -> None:
+        scenarios.append({"name": name, "affected_count": len(indices), "details": details})
+
+    # 1. Remove the three newest rows (or as many as safely possible).
+    drop_count = min(3, max(0, len(corrupted) - 2))
+    dates = pd.to_datetime(corrupted["published"], errors="coerce")
+    newest = dates.sort_values(ascending=False, na_position="last").index[:drop_count].tolist()
+    dropped_ids = corrupted.loc[newest, "paper_id"].astype(str).tolist()
+    corrupted = corrupted.drop(index=newest).reset_index(drop=True)
+    record("drop_latest_records", dropped_ids, f"Removed newest published records: {dropped_ids}")
+
+    # Subsequent selections are disjoint where possible, so each signal is
+    # visible independently in the quality report.
+    def select(count: int, offset: int = 0) -> list[int]:
+        if corrupted.empty:
+            return []
+        return [int(i) for i in corrupted.index[offset:offset + min(count, len(corrupted))]]
+
+    blank = select(3, 0)
+    corrupted.loc[blank, "summary"] = ""
+    record("blank_summary", corrupted.loc[blank, "paper_id"].astype(str).tolist(),
+           "Set summary to an empty string.")
+
+    noisy = select(3, 3)
+    corrupted.loc[noisy, "text_for_embedding"] = corrupted.loc[noisy, "text_for_embedding"].astype(str) + " " + NOISE
+    record("inject_text_noise", corrupted.loc[noisy, "paper_id"].astype(str).tolist(),
+           f"Appended noise marker: {NOISE}")
+
+    truncated = select(3, 6)
+    corrupted.loc[truncated, "title"] = corrupted.loc[truncated, "title"].astype(str).str.slice(0, 8)
+    record("truncate_title", corrupted.loc[truncated, "paper_id"].astype(str).tolist(),
+           "Truncated title to at most eight characters.")
+
+    stale = select(4, 9)
+    stale_date = (datetime.now(UTC).date() - timedelta(days=1825)).isoformat()
+    corrupted.loc[stale, "published"] = stale_date
+    if "age_days" in corrupted.columns:
+        run_reference = pd.Timestamp(datetime.now(UTC).date())
+        corrupted.loc[stale, "age_days"] = (run_reference - pd.Timestamp(stale_date)).days
+    record("stale_date", corrupted.loc[stale, "paper_id"].astype(str).tolist(),
+           f"Set published to {stale_date} and recomputed age_days.")
+
+    # 6. Restore the original row count with duplicates. Duplicate IDs are
+    # intentional and are what ExpectColumnValuesToBeUnique must catch.
+    duplicate_count = min(drop_count, len(corrupted))
+    duplicate_source = corrupted.iloc[:duplicate_count].copy(deep=True)
+    corrupted = pd.concat([corrupted, duplicate_source], ignore_index=True)
+    record("duplicate_rows", duplicate_source["paper_id"].astype(str).tolist(),
+           "Appended exact copies to restore the original row count.")
+
+    # Rebuild the composite text after summary/title/date mutations. Preserve
+    # injected noise by appending it after the canonical content.
+    for index in corrupted.index:
+        authors = corrupted.at[index, "authors_joined"] if "authors_joined" in corrupted else corrupted.at[index, "authors"] if "authors" in corrupted else ""
+        categories = corrupted.at[index, "categories_joined"] if "categories_joined" in corrupted else corrupted.at[index, "categories"] if "categories" in corrupted else ""
+        corrupted.at[index, "text_for_embedding"] = (
+            f"Title: {corrupted.at[index, 'title']}\n"
+            f"Authors: {authors}\n"
+            f"Published: {corrupted.at[index, 'published']}\n"
+            f"Categories: {categories}\n"
+            f"Summary: {corrupted.at[index, 'summary']}"
+            + (f" {NOISE}" if NOISE in str(corrupted.at[index, "text_for_embedding"]) else "")
+        )
+
+    log = {
+        "timestamp": datetime.now(UTC).isoformat(),
+        "total_original_rows": original_count,
+        "total_corrupted_rows": len(corrupted),
+        "scenarios": scenarios,
+    }
+    write_json(Path(output_log_path), log)
+    return corrupted
+>>>>>>> a42a52f (feat: complete Day 10 data pipeline, observability and repair flow)

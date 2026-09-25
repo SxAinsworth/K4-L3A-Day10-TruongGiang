@@ -1,7 +1,8 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
-from datetime import UTC, datetime, timedelta
+from datetime import datetime, timedelta
+from core.compat import UTC
 from pathlib import Path
 import os
 
@@ -43,7 +44,11 @@ class Paths:
 
     @property
     def test_set_json(self) -> Path:
+<<<<<<< HEAD
         """Compatibility alias used by the Checkpoint 2 instructions."""
+=======
+        """Compatibility alias for benchmark smoke-test commands."""
+>>>>>>> a42a52f (feat: complete Day 10 data pipeline, observability and repair flow)
         return self.eval_testset
 
 

@@ -1,10 +1,15 @@
 from __future__ import annotations
 
+<<<<<<< HEAD
+=======
+from dataclasses import dataclass
+>>>>>>> a42a52f (feat: complete Day 10 data pipeline, observability and repair flow)
 from pathlib import Path
 from typing import Any
 
 import pandas as pd
 
+<<<<<<< HEAD
 from core.utils import first_sentence, normalize_whitespace, read_json, write_json
 
 
@@ -50,23 +55,57 @@ def _sample(sample_id: int, question_type: str, question: str, ground_truth: str
 
 def build_test_set(df: pd.DataFrame, output_path) -> BenchmarkTestSet:
     """Build a deterministic, source-grounded benchmark from clean papers.
+=======
+from core.utils import normalize_whitespace, read_json, write_json
 
-    Pseudo-code:
-    1. Kiem tra so luong document toi thieu.
-    2. Chon mot so paper dai dien.
-    3. Tao nhieu loai cau hoi:
-       - summary
-       - authors
-       - date
-       - categories
-    4. Moi row can co:
-       - id
-       - question_type
-       - question
-       - ground_truth
-       - ground_truth_doc_ids
-    5. Ghi file JSON vao output_path.
+QUESTION_TYPES = ('summary', 'authors', 'date', 'category', 'multi_hop')
+>>>>>>> a42a52f (feat: complete Day 10 data pipeline, observability and repair flow)
+
+
+@dataclass
+class BenchmarkTestSet:
+    samples: list[dict[str, Any]]
+
+    def __post_init__(self) -> None:
+        if not isinstance(self.samples, list) or len(self.samples) != 5:
+            raise ValueError('Benchmark must contain exactly five samples.')
+        ids, types = set(), []
+        for sample in self.samples:
+            if not isinstance(sample, dict):
+                raise ValueError('Each sample must be an object.')
+            for key in ('id', 'type', 'question', 'ground_truth'):
+                if not isinstance(sample.get(key), str) or not sample[key].strip():
+                    raise ValueError(f'Sample requires a nonempty string: {key}')
+            doc_ids = sample.get('ground_truth_doc_ids')
+            if not isinstance(doc_ids, list) or not doc_ids or any(not isinstance(x, str) or not x.strip() for x in doc_ids):
+                raise ValueError('ground_truth_doc_ids must be nonempty document ID strings.')
+            if len(set(doc_ids)) != len(doc_ids):
+                raise ValueError('Duplicate ground-truth document IDs.')
+            if sample['type'] == 'multi_hop' and len(doc_ids) != 2:
+                raise ValueError('multi_hop requires exactly two source documents.')
+            if sample['id'] in ids:
+                raise ValueError('Sample IDs must be unique.')
+            ids.add(sample['id'])
+            types.append(sample['type'])
+            # Compatibility with the existing metrics evaluator.
+            sample['question_type'] = sample['type']
+        if set(types) != set(QUESTION_TYPES):
+            raise ValueError('Benchmark requires one sample of each of the five types.')
+
+
+def _text(value: Any) -> str:
+    if isinstance(value, (list, tuple)):
+        return ', '.join(filter(None, (_text(part) for part in value)))
+    return normalize_whitespace(value) if isinstance(value, str) else ''
+
+
+def build_test_set(df: pd.DataFrame, output_path: Path) -> list[dict[str, Any]]:
+    """Explicitly generate five questions from the first usable, distinct papers.
+
+    Missing subjects remain unknown; categories are never invented from titles.
+    Use load_or_create_test_set for evaluations to preserve the baseline set.
     """
+<<<<<<< HEAD
     required = {
         "paper_id", "title", "summary", "published", "authors_joined", "categories_joined"
     }
@@ -171,3 +210,56 @@ def load_or_create_test_set(df: pd.DataFrame, settings_or_path, refresh: bool | 
         if isinstance(payload, list) and payload:
             return BenchmarkTestSet(payload)
     return build_test_set(df, output_path)
+=======
+    required = {'paper_id', 'title', 'summary', 'published'}
+    if missing := required - set(df.columns):
+        raise ValueError(f'Missing benchmark columns: {sorted(missing)}')
+    papers, seen = [], set()
+    for row in df.to_dict(orient='records'):
+        paper = {key: _text(row.get(key)) for key in ('paper_id', 'title', 'summary')}
+        published = pd.to_datetime(row.get('published'), errors='coerce')
+        if not all(paper.values()) or pd.isna(published) or paper['paper_id'] in seen:
+            continue
+        paper['published'] = published.strftime('%Y-%m')
+        paper['authors'] = _text(row.get('authors_joined')) or _text(row.get('authors')) or 'Unknown'
+        paper['categories'] = _text(row.get('categories_joined')) or _text(row.get('categories'))
+        seen.add(paper['paper_id'])
+        papers.append(paper)
+    if len(papers) < 2:
+        raise ValueError('At least two distinct papers with title, summary and valid publication date are required.')
+    left = papers[0]
+    right = next((p for p in papers[1:] if p['title'].casefold() != left['title'].casefold()), None)
+    if right is None:
+        raise ValueError('Multi-hop requires two papers with different titles.')
+    category_paper = next((p for p in papers if p['categories']), left)
+    samples = []
+
+    def add(kind: str, question: str, answer: str, sources: list[dict]) -> None:
+        samples.append({'id': f'q_{kind}_{len(samples) + 1:02d}', 'type': kind,
+                        'question': question, 'ground_truth': answer,
+                        'ground_truth_doc_ids': [p['paper_id'] for p in sources]})
+
+    add('summary', f"Summarize the main research in '{left['title']}'.", left['summary'], [left])
+    add('authors', f"Who authored the study '{right['title']}'?", right['authors'], [right])
+    add('date', f"When was '{left['title']}' published? Give the year and month (YYYY-MM).", left['published'], [left])
+    add('category', f"What categories are recorded for '{category_paper['title']}'? State if the source metadata does not provide them.",
+        category_paper['categories'] or 'Subject categories are not provided in the source metadata.', [category_paper])
+    add('multi_hop', f"Compare the research problems addressed by '{left['title']}' and '{right['title']}'. Explain the focus of each study using both papers.",
+        f"{left['title']}: {left['summary']}\n{right['title']}: {right['summary']}", [left, right])
+    benchmark = BenchmarkTestSet(samples)
+    write_json(Path(output_path), benchmark.samples)
+    return benchmark.samples
+
+
+def load_or_create_test_set(df: pd.DataFrame, output_path: Path) -> BenchmarkTestSet:
+    """Load and validate the saved benchmark, or create it when absent.
+
+    Invalid files raise ValueError rather than silently changing evaluation data.
+    Loading does not depend on df, so corrupted data cannot alter ground truth.
+    """
+    path = Path(output_path)
+    if path.exists():
+        payload = read_json(path)
+        return BenchmarkTestSet(payload)
+    return BenchmarkTestSet(build_test_set(df, path))
+>>>>>>> a42a52f (feat: complete Day 10 data pipeline, observability and repair flow)
